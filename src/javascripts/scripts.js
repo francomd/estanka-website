@@ -1,1 +1,1 @@
-// Add your scripts here
+import 'bootstrap/dist/js/bootstrap.bundle';

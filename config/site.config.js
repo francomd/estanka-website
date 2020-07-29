@@ -9,16 +9,16 @@ if (!ROOT) {
 
 const config = {
   // Your website's name, used for favicon meta tags
-  site_name: 'Static Site Boilerplate',
+  site_name: 'Estanka',
 
   // Your website's description, used for favicon meta tags
-  site_description: 'A modern boilerplate for static website development',
+  site_description: 'Somos una empresa dedicada al diseño, fabricación e instalación de aberturas, cerramientos y estructuras a pedido de aluminio.',
 
   // Your website's URL, used for sitemap
-  site_url: 'http://staticsiteboilerplate.com',
+  site_url: 'https://estanka.com',
 
   // Google Analytics tracking ID (leave blank to disable)
-  googleAnalyticsUA: '',
+  googleAnalyticsUA: 'UA-173116485-1',
 
   // The viewport meta tag added to your HTML page's <head> tag
   viewport: 'width=device-width,initial-scale=1',
