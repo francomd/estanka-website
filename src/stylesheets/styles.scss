@@ -1,2 +1,137 @@
-@import './config';
-@import 'bootstrap/scss/bootstrap';
+@import "./config";
+@import "bootstrap/scss/bootstrap";
+
+.navbar {
+  &-light &-nav .nav-link {
+    color: map-get($theme-colors, "dark");
+    transition: color 150ms ease-out;
+  }
+
+  &-light .nav-link-icon {
+    transition: color 150ms ease-out;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &-light &-nav .nav-link:hover,
+  &-light &-nav .nav-link:focus {
+    color: map-get($theme-colors, "primary-light");
+  }
+
+  &-toggler:focus {
+    outline-color: map-get($grays, "200");
+  }
+}
+
+.hero {
+  .carousel {
+    background: map-get($theme-colors, "primary");
+
+    &-item {
+      height: calc(100vh - 80px); // 100vh - navbar height
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70%;
+
+        h3 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &-indicators {
+      li {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        border: 0;
+        opacity: 1;
+
+        &.active {
+          height: 8px;
+          width: 8px;
+          border: 2px solid white;
+          background: map-get($theme-colors, "primary");
+        }
+      }
+    }
+  }
+
+  img {
+    max-height: 400px;
+  }
+
+  .background-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+    padding: 0 2rem;
+  }
+}
+
+.company {
+  &-wrapper {
+    border: 2px solid map-get($theme-colors, "primary");
+    background: map-get($theme-colors, "primary");
+  }
+
+  &-box {
+    padding: 3rem 2.875rem;
+    background: white;
+    border: 1px solid map-get($theme-colors, "primary");
+  }
+
+  .box {
+    &-pattern {
+      background-image:
+        linear-gradient(
+          135deg,
+          #fff 43.75%,
+          #00329c 43.75%,
+          #00329c 50%,
+          #fff 50%,
+          #fff 93.75%,
+          #00329c 93.75%,
+          #00329c 100%
+        );
+      background-size: 22.63px 22.63px;
+    }
+
+    &-shapes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+
+      img {
+        width: 45px;
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+.services {
+  .separator {
+    width: 40px;
+    height: 6px;
+    background: white;
+  }
+
+  .service-icon {
+    @media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
+      width: 100px;
+    }
+  }
+}

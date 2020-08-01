@@ -1,1 +1,6 @@
-import 'bootstrap/dist/js/bootstrap.bundle';
+const $ = require('jquery');
+
+window.$ = $;
+
+require('popper.js');
+require('bootstrap');
