@@ -70,9 +70,9 @@
 
   .background-header {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 32%;
+    left: 0;
+    // transform: translate(-50%, -50%);
     width: 100%;
     z-index: -1;
     padding: 0 2rem;
@@ -113,8 +113,17 @@
       justify-content: space-between;
       align-items: center;
       padding: 2rem;
-
+      &:hover {
+        img {
+          &:nth-child(2) {
+            transform: rotate(-360deg);
+          }
+          transform: rotate(360deg);
+        }
+      }
+      
       img {
+        transition: all 2s ease-in-out;
         width: 45px;
         margin: 0 1rem;
       }
@@ -130,6 +139,11 @@
   }
 
   .service-icon {
+    transition: all 400ms ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+
     @media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
       width: 100px;
     }
