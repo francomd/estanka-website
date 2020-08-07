@@ -6,7 +6,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1440px,
+  xxl: 1200px,
+  // xxl: 1440px,
 );
 
 $container-max-widths: (
@@ -14,7 +15,8 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1440px,
+  xxl: 1140px,
+  // xxl: 1440px,
 );
 
 $theme-colors: (
@@ -79,9 +81,9 @@ html,
 body {
   font-size: 16px;
 
-  @media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
-    font-size: 20px;
-  }
+  // @media screen and (min-width: map-get($grid-breakpoints, "xxl")) {
+  //   font-size: 20px;
+  // }
 }
 
 h1,

@@ -135,3 +135,63 @@
     }
   }
 }
+
+.gallery {
+  .carousel {
+    &-item {
+      display: flex;
+      height: 500px;
+      &-col {
+        display: flex;
+        position: relative;
+        flex: 1 0 0%;
+        animation-name: hoverOutGalleryShadow;
+        animation-duration: 400ms;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        transition: flex 400ms ease-in-out;
+        &:hover {
+          flex: 3 0 0%;
+          animation-name: hoverGalleryShadow;
+          animation-duration: 400ms;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+          animation-delay: 200ms;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+    &-control {
+      &-prev, &-next {
+        width: 5%;
+      }
+    }
+  }
+}
+
+@keyframes hoverGalleryShadow {
+  0% {
+    z-index: 2;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  }
+  100% {
+    z-index: 2;
+    box-shadow: 0 25px 110px 5px rgba(0, 0, 0, 1);
+  }
+}
+@keyframes hoverOutGalleryShadow {
+  0% {
+    z-index: 2;
+    box-shadow: 0 25px 110px 5px rgba(0, 0, 0, 1);
+  }
+  100% {
+    z-index: 2;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  }
+}
