@@ -112,7 +112,7 @@ $h6-font-size: $font-size-base * 0.75;
 
 $link-hover-color: map-get($theme-colors, "primary-light");
 
-$spacer: 1.25rem;
+$spacer: 1rem;
 $spacers: ();
 
 $spacers: map-merge(

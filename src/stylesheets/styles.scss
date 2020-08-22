@@ -221,11 +221,95 @@
   }
 }
 
+.products {
+  hr {
+    border-color: var(--primary);
+    border-top-width: 3px;
+  }
+
+  .separator {
+    width: 60%;
+    height: 1rem;
+    background: var(--primary-light);
+  }
+
+  .collapse-button {
+    font-size: 2.25rem;
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    color: var(--primary);
+    transition: all 300ms ease;
+
+    &:hover,
+    &:active,
+    &:not(.collapsed) {
+      color: var(--primary-light);
+      position: relative;
+      text-decoration: none;
+
+      &::after,
+      &::before {
+        content: url("../images/black-rightwards-arrowhead.svg");
+        position: absolute;
+        width: 24px;
+      }
+
+      &::after {
+        top: 45%;
+        right: -4rem;
+        transform: translate(50%, -50%) rotate(180deg);
+      }
+
+      &::before {
+        top: 50%;
+        left: -4rem;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .table {
+    &-wrapper {
+      padding: 0 15px;
+      border: 1px solid var(--primary);
+    }
+
+    &-cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.625rem 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.2;
+      text-align: center;
+      color: var(--primary-light);
+      border: 1px solid var(--primary);
+    }
+  }
+
+  .cell-pattern {
+    background-image:
+      linear-gradient(
+        135deg,
+        #fff 43.75%,
+        #00329c 43.75%,
+        #00329c 50%,
+        #fff 50%,
+        #fff 93.75%,
+        #00329c 93.75%,
+        #00329c 100%
+      );
+    background-size: 16px 16px;
+  }
+}
+
 .clients {
   background: #ebebeb;
+
   small {
     color: #969695;
   }
+
   img {
     height: 115px;
   }
