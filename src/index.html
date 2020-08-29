@@ -323,7 +323,7 @@
 							<h1 class="text-primary text-uppercase mb-4">
 								Productos
 							</h1>
-							<h4 class="text-primary-light">
+							<h4 class="text-primary-light font-base font-weight-light">
 								Productos de alta calidad diseñados a pedido y
 								a medida de tus necesidades. Lograr el máximo nivel de
 								detalle en todo lo que hacemos es nuestro objetivo.
@@ -584,6 +584,148 @@
 							<img src="./images/client-logo-2.svg" alt="Exa">
 							<img src="./images/client-logo-3.svg" alt="Vasa">
 							<img src="./images/client-logo-4.svg" alt="Favicur">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact py-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7">
+							<h3 class="text-primary mt-3">
+								DEJÁNOS TU CONSULTA.<br>
+								ESTAMOS PARA ASESORARTE<br>
+								EN LO QUE NECESITES.
+							</h3>
+							<ul class="p-0 mt-4">
+								<li class="d-flex pb-2">
+									<img src="./images/marker-icon.svg" alt="Marker Icon" width="20" class="mr-2">
+									<p class="m-0">Baigorrí 279. Alta Córdoba. Córdoba. Argentina.</p>
+								</li>
+								<li class="d-flex pb-2">
+									<img src="./images/clock-icon.svg" alt="Clock Icon" width="20" class="mr-2">
+									<p class="m-0">Lunes a Viernes 08:00 a 12:30 hs. / 14:00 a 18.00 hs.</p>
+								</li>
+								<li class="d-flex pb-2">
+									<img src="./images/mail-icon.svg" alt="Mail Icon" width="20" class="mr-2">
+									<p class="m-0">estanka.aluminio@gmail.com</h6>
+								</li>
+								<li class="d-flex">
+									<img src="./images/phone-icon.svg" alt="Phone Icon" width="20" class="mr-2">
+									<p class="m-0">Tel.: 54 (0351) 4717181</p>
+								</li>
+							</ul>
+							<div class="d-flex mt-4">
+								<a href="https://wa.me/5493518143149" target="_blank" class="mr-3">
+									<img src="./images/whatsapp-filled-icon.svg" alt="WhatsApp Icon" width="24">
+								</a>
+								<a href="https://instagram.com/estankaluminio" target="_blank" class="mr-3">
+									<img src="./images/instagram-filled-icon.svg" alt="Instagram Icon" width="24">
+								</a>
+								<a href="https://www.facebook.com/estankaluminio" target="_blank">
+									<img src="./images/facebook-filled-icon.svg" alt="Facebook Icon" width="24">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<form class="needs-validation" novalidate>
+								<div class="form-group">
+									<div class="field">
+										<input type="text" class="form-control" id="validationCustom01" placeholder="Ingresa tu nombre" required>
+										<label for="validationCustom01">Nombre</label>
+										<div class="invalid-feedback">
+											¿Cuál es tu nombre?
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="field">
+										<input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tu apellido" required>
+										<label for="validationCustom02">Apellido</label>
+										<div class="invalid-feedback">
+											Rellená tu apellido
+										</div>
+									</div>
+								</div>
+								<div class="form-group form-row">
+									<div class="col pr-sm-3">
+										<div class="field">
+											<input type="email" class="form-control" id="validationCustom03" placeholder="ingresa@tuemail.com" required>
+											<label for="validationCustom03">E-mail</label>
+											<div class="invalid-feedback">
+												Ingresa un email válido
+											</div>
+										</div>
+									</div>
+									<div class="col pl-sm-3">
+										<div class="field">
+											<input type="tel" class="form-control" id="validationCustom04" placeholder="+54 xxx xxx-xxx" required>
+											<label for="validationCustom04">Teléfono</label>
+											<div class="invalid-feedback">
+												Ingresa un teléfono fijo o movil
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="field">
+										<input type="text" class="form-control" id="validationCustom05" placeholder="Córdoba, Argentina" required>
+										<label for="validationCustom05">Ciudad</label>
+										<div class="invalid-feedback">
+											No te olvides de ingresar la ciudad
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="field">
+										<textarea class="form-control" id="validationCustom06" placeholder="Escribe la consulta..." required></textarea>
+										<label for="validationCustom06">Consulta</label>
+										<div class="invalid-feedback">
+											¿Cuál es tu consulta?
+										</div>
+									</div>
+								</div>
+								<!-- <div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+										<label class="form-check-label" for="invalidCheck">
+											Agree to terms and conditions
+										</label>
+										<div class="invalid-feedback">
+											You must agree before submitting.
+										</div>
+									</div>
+								</div> -->
+								<button class="btn btn-primary px-5 mt-3 rounded-pill" type="submit">Enviar</button>
+								<!-- <div class="alert alert-success" role="alert">
+									¡Recibimos tu mensaje! Te contactaremos en los próximos días.
+								</div> -->
+							</form>
+							
+							<script>
+							// Example starter JavaScript for disabling form submissions if there are invalid fields
+							(function() {
+								'use strict';
+								window.addEventListener('load', function() {
+									// Fetch all the forms we want to apply custom Bootstrap validation styles to
+									var forms = document.getElementsByClassName('needs-validation');
+									// Loop over them and prevent submission
+									var validation = Array.prototype.filter.call(forms, function(form) {
+										form.addEventListener('submit', function(event) {
+											if (form.checkValidity() === false) {
+												event.preventDefault();
+												event.stopPropagation();
+											}
+											form.classList.add('was-validated');
+											if (form.checkValidity() === true) {
+												// TODO send mail, hide form and show success alert 
+											}
+										}, false);
+									});
+								}, false);
+							})();
+							</script>
 						</div>
 					</div>
 				</div>

@@ -268,6 +268,14 @@
     }
   }
 
+  .collapse {
+    transition: height 350ms ease-in-out, opacity 250ms ease-in-out;
+  }
+
+  .collapsing {
+    opacity: 0;
+  }
+
   .table {
     &-wrapper {
       padding: 0 15px;
@@ -312,5 +320,109 @@
 
   img {
     height: 115px;
+  }
+}
+
+.contact {
+  form {
+    .field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label,
+    input,
+    textarea {
+      transition: all 0.2s;
+      touch-action: manipulation;
+
+      & + .invalid-feedback,
+      & + .success-feedback {
+        line-height: 0.25;
+        margin-top: 0.5rem;
+        order: 3;
+      }
+    }
+
+    input,
+    textarea {
+      &:placeholder-shown + label {
+        cursor: text;
+        max-width: 66.66%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transform-origin: left bottom;
+        transform: translate(0, 2rem) scale(1.25);
+      }
+
+      &:focus::-webkit-input-placeholder {
+        opacity: 1;
+      }
+
+      &:not(:placeholder-shown) + label,
+      &:focus + label {
+        transform: translate(0, 0) scale(1) !important;
+        cursor: pointer;
+      }
+    }
+
+    input {
+      border: 0;
+      border-bottom: 2px solid var(--primary);
+      -webkit-appearance: none;
+      border-radius: 0;
+      cursor: text;
+      padding-left: 0;
+      padding-right: 0;
+      order: 2;
+
+      &:focus {
+        outline: 0;
+        box-shadow: none !important;
+        border-bottom: 1px solid #666;
+      }
+    }
+
+    label {
+      font-size: 0.8rem;
+      color: var(--primary);
+      margin: 0;
+      order: 1;
+    }
+
+    textarea {
+      border: 2px solid var(--primary);
+      order: 2;
+
+      &:focus {
+        border: 1px solid #666;
+        box-shadow: none !important;
+      }
+
+      & + label {
+        padding-left: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &:not(:placeholder-shown) + label,
+      &:focus + label {
+        padding-left: 0;
+      }
+
+      &:placeholder-shown + label {
+        transform: translate(0, 2.5rem) scale(1.25);
+      }
+    }
+
+    ::-webkit-input-placeholder {
+      opacity: 0;
+      transition: inherit;
+    }
+
+    &.was-validated .form-control:valid,
+    .form-control.is-valid {
+      border-color: var(--primary);
+    }
   }
 }
