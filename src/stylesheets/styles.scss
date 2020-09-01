@@ -28,20 +28,35 @@
 }
 
 .hero {
+  margin-top: 70px; // navbar height
+
   .carousel {
     background: map-get($theme-colors, "primary");
 
     &-item {
-      height: calc(100vh - 80px); // 100vh - navbar height
+      height: calc(100vh - 70px); // 100vh - navbar height
       .container {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 70%;
 
         h3 {
           font-size: 3rem;
+          width: 50%;
+        }
+
+        p {
+          width: 25%;
+        }
+
+        .floating-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          max-height: 90%;
+          min-width: 50%;
+          width: fit-content;
         }
       }
     }
@@ -67,16 +82,6 @@
   img {
     max-height: 400px;
   }
-
-  .background-header {
-    position: absolute;
-    top: 32%;
-    left: 0;
-    // transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: -1;
-    padding: 0 2rem;
-  }
 }
 
 .company {
@@ -97,12 +102,12 @@
         linear-gradient(
           135deg,
           #fff 43.75%,
-          #00329c 43.75%,
-          #00329c 50%,
+          map-get($theme-colors, "primary") 43.75%,
+          map-get($theme-colors, "primary") 50%,
           #fff 50%,
           #fff 93.75%,
-          #00329c 93.75%,
-          #00329c 100%
+          map-get($theme-colors, "primary") 93.75%,
+          map-get($theme-colors, "primary") 100%
         );
       background-size: 22.63px 22.63px;
     }
@@ -223,27 +228,27 @@
 
 .products {
   hr {
-    border-color: var(--primary);
+    border-color: map-get($theme-colors, "primary");
     border-top-width: 3px;
   }
 
   .separator {
     width: 60%;
     height: 1rem;
-    background: var(--primary-light);
+    background: map-get($theme-colors, "primary-light");
   }
 
   .collapse-button {
     font-size: 2.25rem;
     font-family: $headings-font-family;
     text-transform: uppercase;
-    color: var(--primary);
+    color: map-get($theme-colors, "primary");
     transition: all 300ms ease;
 
     &:hover,
     &:active,
     &:not(.collapsed) {
-      color: var(--primary-light);
+      color: map-get($theme-colors, "primary-light");
       position: relative;
       text-decoration: none;
 
@@ -279,7 +284,7 @@
   .table {
     &-wrapper {
       padding: 0 15px;
-      border: 1px solid var(--primary);
+      border: 1px solid map-get($theme-colors, "primary");
     }
 
     &-cell {
@@ -290,8 +295,8 @@
       font-size: 0.875rem;
       line-height: 1.2;
       text-align: center;
-      color: var(--primary-light);
-      border: 1px solid var(--primary);
+      color: map-get($theme-colors, "primary-light");
+      border: 1px solid map-get($theme-colors, "primary");
     }
   }
 
@@ -300,22 +305,22 @@
       linear-gradient(
         135deg,
         #fff 43.75%,
-        #00329c 43.75%,
-        #00329c 50%,
+        map-get($theme-colors, "primary") 43.75%,
+        map-get($theme-colors, "primary") 50%,
         #fff 50%,
         #fff 93.75%,
-        #00329c 93.75%,
-        #00329c 100%
+        map-get($theme-colors, "primary") 93.75%,
+        map-get($theme-colors, "primary") 100%
       );
     background-size: 16px 16px;
   }
 }
 
 .clients {
-  background: #ebebeb;
+  background: map-get($grays, "200");
 
   small {
-    color: #969695;
+    color: map-get($grays, "600");
   }
 
   img {
@@ -324,6 +329,16 @@
 }
 
 .contact {
+  .social-media-icon {
+    transition: all 300ms ease-in-out;
+
+    &:hover,
+    &:active {
+      opacity: 0.75;
+      transform: translate(0, -0.25rem);
+    }
+  }
+
   form {
     .field {
       display: flex;
@@ -369,7 +384,7 @@
 
     input {
       border: 0;
-      border-bottom: 2px solid var(--primary);
+      border-bottom: 2px solid map-get($theme-colors, "primary");
       -webkit-appearance: none;
       border-radius: 0;
       cursor: text;
@@ -380,23 +395,23 @@
       &:focus {
         outline: 0;
         box-shadow: none !important;
-        border-bottom: 1px solid #666;
+        border-bottom: 1px solid map-get($grays, "600");
       }
     }
 
     label {
       font-size: 0.8rem;
-      color: var(--primary);
+      color: map-get($theme-colors, "primary");
       margin: 0;
       order: 1;
     }
 
     textarea {
-      border: 2px solid var(--primary);
+      border: 2px solid map-get($theme-colors, "primary");
       order: 2;
 
       &:focus {
-        border: 1px solid #666;
+        border: 1px solid map-get($grays, "600");
         box-shadow: none !important;
       }
 
@@ -422,7 +437,51 @@
 
     &.was-validated .form-control:valid,
     .form-control.is-valid {
-      border-color: var(--primary);
+      border-color: map-get($theme-colors, "primary");
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    .carousel {
+      &-item {
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    .carousel {
+      &-item {
+        .container {
+          h3 {
+            font-size: 3rem;
+          }
+
+          p {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .company {
+    .box-shapes {
+      flex-direction: row;
+
+      img {
+        margin: 0 0.5rem;
+        width: 0;
+        flex: 1 1 0%;
+      }
     }
   }
 }

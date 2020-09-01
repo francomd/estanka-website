@@ -7,10 +7,10 @@
   </head>
   <body>
     <main>
-			<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white py-3">
 				<div class="container">
 					<div class="row flex-grow-1">
-						<div class="col-sm-3 d-flex justify-content-between">
+						<div class="col-lg-3 d-flex justify-content-between">
 							<a class="navbar-brand d-flex align-items-center py-1" href="#">
 								<img src="./images/estanka-logo.svg" height="30" alt="Logo Estanka" loading="lazy">
 							</a>
@@ -24,17 +24,17 @@
 									<ul class="navbar-nav justify-content-between">
 										<li class="nav-item">
 										<!-- <li class="nav-item active"> -->
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#"><h6 class="m-0">Empresa</h6></a>
+											<a class="nav-link text-uppercase py-2 py-sm-0" href="#empresa"><h6 class="m-0">Empresa</h6></a>
 											<!-- <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a> -->
 										</li>
 										<li class="nav-item">
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#"><h6 class="m-0">Servicios</h6></a>
+											<a class="nav-link text-uppercase py-2 py-sm-0" href="#servicios"><h6 class="m-0">Servicios</h6></a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#"><h6 class="m-0">Productos</h6></a>
+											<a class="nav-link text-uppercase py-2 py-sm-0" href="#productos"><h6 class="m-0">Productos</h6></a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#"><h6 class="m-0">Contacto</h6></a>
+											<a class="nav-link text-uppercase py-2 py-sm-0" href="#contacto"><h6 class="m-0">Contacto</h6></a>
 										</li
 									</ul>
 								</div>
@@ -64,39 +64,33 @@
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item bg-primary active">
-							<div class="container mx-auto row">
-								<div class="col-sm-7 d-flex flex-column justify-content-between" move-range="1,-1">
+							<div class="container mx-auto">
+								<div class="d-flex flex-column justify-content-between" move-range="1,-1">
 									<h3 class="text-white">DETALLES QUE MARCAN LA DIFERENCIA.</h3>
-									<p class="text-primary-light font-weight-light w-50">Innovación, conocimientos y calidad solo permiten un resultado: la excelencia.</p>
+									<img class="my-4 w-100" src="./images/produccion-text.svg" move-range="2,-2"/>
+									<p class="text-primary-light font-weight-light">Innovación, conocimientos y calidad solo permiten un resultado: la excelencia.</p>
 								</div>
-								<div class="col-sm-5">
-									<img src="./images/produccion-icon.svg" move-range="0,-20" class="d-block" alt="Produccion">
-								</div>
-								<img class="background-header" src="./images/produccion-text.svg" move-range="2,-2"/>
+								<img src="./images/produccion-icon.svg" move-range="0,-20" class="floating-image" alt="Produccion">
 							</div>
 						</div>
 						<div class="carousel-item bg-primary">
-							<div class="container mx-auto row">
-								<div class="col-sm-7 d-flex flex-column justify-content-between" move-range="1,-1">
+							<div class="container mx-auto">
+								<div class="d-flex flex-column justify-content-between" move-range="1,-1">
 									<h3 class="text-white">TRABAJO QUE LLEGA EN LAS MEJORES MANOS.</h3>
-									<p class="text-primary-light font-weight-light w-50">Desde Córdoba a todo el país asegurando las condiciones óptimas de cuidado y traslado.</p>
+									<img class="my-5 w-100" src="./images/transporte-text.svg" move-range="2,-2" />
+									<p class="text-primary-light font-weight-light">Desde Córdoba a todo el país asegurando las condiciones óptimas de cuidado y traslado.</p>
 								</div>
-								<div class="col-sm-5">
-									<img src="./images/transporte-icon.svg" move-range="0,-20" class="d-block" alt="Transporte">
-								</div>
-								<img class="background-header" src="./images/transporte-text.svg" move-range="2,-2" />
+								<img src="./images/transporte-icon.svg" move-range="0,-20" class="floating-image" alt="Transporte">
 							</div>
 						</div>
 						<div class="carousel-item bg-primary">
-							<div class="container mx-auto row">
-								<div class="col-sm-7 d-flex flex-column justify-content-between" move-range="1,-1">
+							<div class="container mx-auto">
+								<div class="d-flex flex-column justify-content-between" move-range="1,-1">
 									<h3 class="text-white">CONFIANZA ES LA BASE DE LOS MEJORES TRABAJOS.</h3>
-									<p class="text-primary-light font-weight-light w-50">Asesoramiento especilizado y personalizado para llegar a los mejores resultados.</p>
+									<img class="my-5 w-100" src="./images/asesoramiento-text.svg" move-range="2,-2" />
+									<p class="text-primary-light font-weight-light">Asesoramiento especilizado y personalizado para llegar a los mejores resultados.</p>
 								</div>
-								<div class="col-sm-5">
-									<img src="./images/asesoramiento-icon.svg" move-range="0,-20" class="d-block" alt="Asesoramiento">
-								</div>
-								<img class="background-header" src="./images/asesoramiento-text.svg" move-range="2,-2" />
+								<img src="./images/asesoramiento-icon.svg" move-range="0,-20" class="floating-image" alt="Asesoramiento">
 							</div>
 						</div>
 					</div>
@@ -111,7 +105,7 @@
 				</div>
 			</section>
 
-			<section class="company">
+			<section class="company" id="empresa">
 				<div class="container py-5">
 					<div class="row justify-content-center">
 						<h1 class="text-primary text-uppercase mb-4">
@@ -120,7 +114,7 @@
 					</div>
 					<div class="row justify-content-center">
 						<div class="col-sm-10">
-							<div class="row company-wrapper">
+							<div class="row company-wrapper m-3 m-sm-0">
 								<div class="col-sm-12 company-box">
 									<p class="text-primary font-weight-bold mb-0 pr-0 pr-lg-4">
 										Asociamos lo estructural, rígido y firme con cualidades poco amigables en la sociedad. <br>
@@ -160,9 +154,9 @@
 										Córdoba - Arg.
 									</h5>
 								</div>
-								<div class="col-sm-2 company-box py-3">
+								<div class="col-sm-2 company-box py-3 d-none d-sm-block">
 								</div>
-								<div class="col-sm-2 company-box py-3">
+								<div class="col-sm-2 company-box p-3 d-none d-sm-block">
 									<img src="./images/estanka-logo-center.svg" alt="Logo Estanka">
 								</div>
 							</div>
@@ -171,17 +165,17 @@
 				</div>
 			</section>
 
-			<section class="services py-5 bg-primary">
-				<div class="container">
+			<section class="services py-5 bg-primary" id="servicios">
+				<div class="container p-4 p-sm-0">
 					<div class="row justify-content-center">
 						<h1 class="text-white text-uppercase mb-5">
 							Servicios
 						</h1>
 					</div>
 					<div class="row justify-content-around mb-4">
-						<div class="col-sm-6 col-xxl-5">
+						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
 							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon" src="./images/service-icon-1.svg" width="80" alt="Asesoriamiento">
+								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-1.svg" width="80" alt="Asesoriamiento">
 								<div class="ml-sm-4">
 									<h4 class="text-primary-light m-0">Asesoramiento</h4>
 									<div class="separator mt-4 mb-3"></div>
@@ -193,9 +187,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-xxl-5">
+						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
 							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon" src="./images/service-icon-2.svg" width="80" alt="Asesoriamiento">
+								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-2.svg" width="80" alt="Asesoriamiento">
 								<div class="ml-sm-4">
 									<h4 class="text-primary-light m-0">Instalaciones</h4>
 									<div class="separator mt-4 mb-3"></div>
@@ -210,9 +204,9 @@
 						</div>
 					</div>
 					<div class="row justify-content-around mb-4">
-						<div class="col-sm-6 col-xxl-5">
+						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
 							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon" src="./images/service-icon-3.svg" width="80" alt="Asesoriamiento">
+								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-3.svg" width="80" alt="Asesoriamiento">
 								<div class="ml-sm-4">
 									<h4 class="text-primary-light m-0">Producción</h4>
 									<div class="separator mt-4 mb-3"></div>
@@ -224,9 +218,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-xxl-5">
+						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
 							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon" src="./images/service-icon-4.svg" width="80" alt="Asesoriamiento">
+								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-4.svg" width="80" alt="Asesoriamiento">
 								<div class="ml-sm-4">
 									<h4 class="text-primary-light m-0">Garantía</h4>
 									<div class="separator mt-4 mb-3"></div>
@@ -239,9 +233,9 @@
 						</div>
 					</div>
 					<div class="row justify-content-around">
-						<div class="col-sm-6 col-xxl-5">
+						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
 							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon" src="./images/service-icon-5.svg" width="80" alt="Asesoriamiento">
+								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-5.svg" width="80" alt="Asesoriamiento">
 								<div class="ml-sm-4">
 									<h4 class="text-primary-light m-0">Entrega en obra</h4>
 									<div class="separator mt-4 mb-3"></div>
@@ -256,7 +250,7 @@
 						</div>
 						<div class="col-sm-6 col-xxl-5">
 							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon" src="./images/service-icon-6.svg" width="80" alt="Asesoriamiento">
+								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-6.svg" width="80" alt="Asesoriamiento">
 								<div class="ml-sm-4">
 									<h4 class="text-primary-light m-0">Post Venta</h4>
 									<div class="separator mt-4 mb-3"></div>
@@ -273,7 +267,7 @@
 			</section>
 
 			<section class="gallery">
-				<div id="galleryCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<div id="galleryCarousel" class="carousel slide carousel-fade d-none d-sm-block" data-ride="carousel">
 					<div class="carousel-inner bg-primary">
 						<div class="carousel-item bg-primary active">
 							<div class="carousel-item-col">
@@ -304,6 +298,48 @@
 							</div>
 						</div>
 					</div>
+					<div class="carousel-inner bg-primary d-block d-sm-none">
+						<div class="carousel-item bg-primary active">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-1.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-3.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-2.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-6.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-7.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-5.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-8.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-4.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+					</div>
 					<a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
@@ -313,17 +349,69 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
+				<div id="galleryCarouselMobile" class="carousel slide carousel-fade d-block d-sm-none" data-ride="carousel">
+					<div class="carousel-inner bg-primary">
+						<div class="carousel-item bg-primary active">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-1.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-3.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-2.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-6.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-7.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-5.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-8.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+						<div class="carousel-item bg-primary">
+							<div class="carousel-item-col">
+								<img src="./images/gallery-4.jpg" alt="Imagen de producto">
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#galleryCarouselMobile" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#galleryCarouselMobile" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
 			</section>
 
 
-			<section class="products py-5">
-				<div class="container">
+			<section class="products py-5" id="productos">
+				<div class="container p-4 p-sm-0">
 					<div class="row justify-content-center">
 						<div class="col-sm-9 text-center">
 							<h1 class="text-primary text-uppercase mb-4">
 								Productos
 							</h1>
-							<h4 class="text-primary-light font-base font-weight-light">
+							<h4 class="text-primary-light font-base">
 								Productos de alta calidad diseñados a pedido y
 								a medida de tus necesidades. Lograr el máximo nivel de
 								detalle en todo lo que hacemos es nuestro objetivo.
@@ -333,14 +421,14 @@
 				</div>
 				<hr class="mt-4 mb-5 mx-2 mx-sm-5">
 				<div class="d-flex flex-column align-items-center w-100">
-					<div class="container text-center">
+					<div class="container text-center p-4 p-sm-0">
 						<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseAberturas" role="button" aria-expanded="false" aria-controls="collapseAberturas">
 							Aberturas
 						</a>
 					</div>
 					
 					<div class="collapse py-5 mt-4 w-100" id="collapseAberturas">
-						<div class="container">
+						<div class="container p-4 p-sm-0">
 							<div class="row">
 								<div class="col-sm-5">
 									<h4 class="h4 text-primary text-uppercase mb-0">Abertura</h4>
@@ -452,16 +540,16 @@
 						</div>
 					</div>
 
-					<div class="container text-center mt-4">
+					<div class="container text-center mt-4 p-4 p-sm-0">
 						<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseVidrios" role="button" aria-expanded="false" aria-controls="collapseVidrios">
 							Vidrios
 						</a>
 					</div>
 
 					<div class="collapse bg-primary-light py-5 mt-4 w-100" id="collapseVidrios">
-						<div class="container">
+						<div class="container p-4 p-sm-0">
 							<div class="row">
-								<div class="col-sm-6 pr-5 mb-5">
+								<div class="col-sm-6 pr-0 pr-lg-5 pr-md-3 mb-5">
 									<div class="row">
 										<div class="col-9">
 											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
@@ -478,7 +566,7 @@
 										planas y paralelas con sus superficies brillantes, pulidas a fuego.
 									</p>
 								</div>
-								<div class="col-sm-6 pl-5 mb-5">
+								<div class="col-sm-6 pl-0 pl-lg-5 pl-md-3 mb-5">
 									<div class="row">
 										<div class="col-9">
 											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
@@ -497,7 +585,7 @@
 										evitando que las personas se lastimen.
 									</p>
 								</div>
-								<div class="col-sm-6 pr-5 mb-5 mb-sm-0">
+								<div class="col-sm-6 pr-0 pr-lg-5 pr-md-3 mb-5 mb-sm-0">
 									<div class="row">
 										<div class="col-9">
 											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
@@ -516,7 +604,7 @@
 										de aislante térmico, sellado al paso de la humedad y al vapor de agua.
 									</p>
 								</div>
-								<div class="col-sm-6 pl-5">
+								<div class="col-sm-6 pl-0 pl-lg-5 pl-md-3">
 									<div class="row">
 										<div class="col-9">
 											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
@@ -538,16 +626,16 @@
 						</div>
 					</div>
 
-					<div class="container text-center mt-4">
+					<div class="container text-center mt-4 p-4 p-sm-0">
 						<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseOtros">
 							Otros
 						</a>
 					</div>
 
 					<div class="collapse bg-primary py-5 mt-4 w-100" id="collapseOtros">
-						<div class="container">
+						<div class="container p-4 p-sm-0">
 							<div class="row">
-								<div class="col-sm-6 pr-5">
+								<div class="col-sm-6 pr-5 mb-4 mb-sm-0">
 									<h4 class="display-4 text-white text-uppercase">Persianas</h4>
 									<div class="separator mt-3 mb-4"></div>
 									<p class="text-white">
@@ -558,7 +646,7 @@
 										iluminación natural. Efectos del granizo.
 									</p>
 								</div>
-								<div class="col-sm-6 pl-5">
+								<div class="col-sm-6 pl-0 pl-sm-5">
 									<h4 class="display-4 text-white text-uppercase">Alucobond</h4>
 									<div class="separator mt-3 mb-4"></div>
 									<p class="text-white">
@@ -575,24 +663,22 @@
 				</div>
 			</section>
 
-			<section class="clients py-3">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-sm-10 d-flex justify-content-center align-items-center">
-							<small class="text-uppercase font-weight-light pr-4">Trabajamos con:</small>
-							<img src="./images/client-logo-1.svg" alt="Aluar">
-							<img src="./images/client-logo-2.svg" alt="Exa">
-							<img src="./images/client-logo-3.svg" alt="Vasa">
-							<img src="./images/client-logo-4.svg" alt="Favicur">
-						</div>
+			<section class="clients py-5 py-md-3">
+				<div class="container py-4 py-sm-0">
+					<div class="d-flex justify-content-center align-items-center flex-column flex-md-row flex-wrap">
+						<small class="text-uppercase font-weight-light pr-0 pr-md-4 mb-3 mb-md-0">Trabajamos con:</small>
+						<img src="./images/client-logo-1.svg" alt="Aluar">
+						<img src="./images/client-logo-2.svg" alt="Exa">
+						<img src="./images/client-logo-3.svg" alt="Vasa">
+						<img src="./images/client-logo-4.svg" alt="Favicur">
 					</div>
 				</div>
 			</section>
 
-			<section class="contact py-5">
-				<div class="container">
+			<section class="contact py-5" id="contacto">
+				<div class="container p-4 p-sm-0">
 					<div class="row">
-						<div class="col-sm-7">
+						<div class="col-sm-7 mb-4 mb-sm-0">
 							<h3 class="text-primary mt-3">
 								DEJÁNOS TU CONSULTA.<br>
 								ESTAMOS PARA ASESORARTE<br>
@@ -600,30 +686,30 @@
 							</h3>
 							<ul class="p-0 mt-4">
 								<li class="d-flex pb-2">
-									<img src="./images/marker-icon.svg" alt="Marker Icon" width="20" class="mr-2">
+									<img src="./images/marker-icon.svg" alt="Marker Icon" width="22" class="mr-2">
 									<p class="m-0">Baigorrí 279. Alta Córdoba. Córdoba. Argentina.</p>
 								</li>
 								<li class="d-flex pb-2">
-									<img src="./images/clock-icon.svg" alt="Clock Icon" width="20" class="mr-2">
+									<img src="./images/clock-icon.svg" alt="Clock Icon" width="22" class="mr-2">
 									<p class="m-0">Lunes a Viernes 08:00 a 12:30 hs. / 14:00 a 18.00 hs.</p>
 								</li>
 								<li class="d-flex pb-2">
-									<img src="./images/mail-icon.svg" alt="Mail Icon" width="20" class="mr-2">
+									<img src="./images/mail-icon.svg" alt="Mail Icon" width="22" class="mr-2">
 									<p class="m-0">estanka.aluminio@gmail.com</h6>
 								</li>
 								<li class="d-flex">
-									<img src="./images/phone-icon.svg" alt="Phone Icon" width="20" class="mr-2">
+									<img src="./images/phone-icon.svg" alt="Phone Icon" width="22" class="mr-2">
 									<p class="m-0">Tel.: 54 (0351) 4717181</p>
 								</li>
 							</ul>
 							<div class="d-flex mt-4">
-								<a href="https://wa.me/5493518143149" target="_blank" class="mr-3">
+								<a href="https://wa.me/5493518143149" target="_blank" class="social-media-icon mr-3">
 									<img src="./images/whatsapp-filled-icon.svg" alt="WhatsApp Icon" width="24">
 								</a>
-								<a href="https://instagram.com/estankaluminio" target="_blank" class="mr-3">
+								<a href="https://instagram.com/estankaluminio" target="_blank" class="social-media-icon mr-3">
 									<img src="./images/instagram-filled-icon.svg" alt="Instagram Icon" width="24">
 								</a>
-								<a href="https://www.facebook.com/estankaluminio" target="_blank">
+								<a href="https://www.facebook.com/estankaluminio" target="_blank" class="social-media-icon">
 									<img src="./images/facebook-filled-icon.svg" alt="Facebook Icon" width="24">
 								</a>
 							</div>
