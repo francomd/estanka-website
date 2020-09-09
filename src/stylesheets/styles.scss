@@ -1,5 +1,6 @@
 @import "./config";
-@import "bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
+@import "~animate.css/animate.css";
 
 .navbar {
   &-light &-nav .nav-link {
@@ -48,6 +49,14 @@
 
         p {
           width: 25%;
+        }
+
+        .long-text {
+          margin: 3rem 0;
+
+          &.small-margin {
+            margin: 1rem 0;
+          }
         }
 
         .floating-image {
@@ -438,6 +447,20 @@
     &.was-validated .form-control:valid,
     .form-control.is-valid {
       border-color: map-get($theme-colors, "primary");
+    }
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .hero {
+    .carousel {
+      &-item {
+        height: calc(80vh - 70px);
+
+        .long-text {
+          margin: 3rem 0;
+        }
+      }
     }
   }
 }

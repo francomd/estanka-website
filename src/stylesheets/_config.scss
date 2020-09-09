@@ -134,3 +134,12 @@ $spacers: map-merge(
   ),
   $spacers
 );
+
+// Animate.css
+.animate {
+  visibility: hidden;
+
+  &__animated {
+    visibility: visible;
+  }
+}
