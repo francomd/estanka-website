@@ -71,8 +71,8 @@ if (isset($firstName, $email)) {
     $mail->Password = "@yyhMfV5nG";
 
     $mail->addReplyTo('no-reply@estanka.com.ar', 'NO RESPONDER');
-    $mail->setFrom('website@battagliero.com.ar', 'Sitio Web');
-    $mail->addAddress('website@battagliero.com.ar', 'Contacto');
+    $mail->setFrom('website@estanka.com.ar', 'Sitio Web');
+    $mail->addAddress('info@estanka.com.ar', 'Info');
     $mail->Subject = 'Consulta de '.$firstName;
     $mail->MsgHTML($body);
 
