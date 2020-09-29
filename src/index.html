@@ -1,778 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Estanka</title>
-    <meta name="description" content="" />
-  </head>
-  <body>
-    <main>
-			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white py-3">
-				<div class="container">
-					<div class="row flex-grow-1">
-						<div class="col-lg-3 d-flex justify-content-between">
-							<a class="navbar-brand d-flex align-items-center py-1" href="#">
-								<img src="./images/estanka-logo.svg" height="30" alt="Logo Estanka" loading="lazy">
-							</a>
-							<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-						</div>
-						<div class="col-sm-9 d-flex align-items-center">
-							<div class="collapse navbar-collapse row py-3 py-sm-0" id="navbarNav">
-								<div class="col-10 col-sm-8">
-									<ul class="navbar-nav justify-content-between">
-										<li class="nav-item">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Estanka</title>
+	<meta name="description" content="" />
+</head>
+
+<body>
+	<main>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white py-3">
+			<div class="container">
+				<div class="row flex-grow-1">
+					<div class="col-lg-3 d-flex justify-content-between">
+						<a class="navbar-brand d-flex align-items-center py-1" href="#">
+							<img src="./images/estanka-logo.svg" height="30" alt="Logo Estanka" loading="lazy">
+						</a>
+						<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class="col-sm-9 d-flex align-items-center">
+						<div class="collapse navbar-collapse row py-3 py-sm-0" id="navbarNav">
+							<div class="col-10 col-sm-8">
+								<ul class="navbar-nav justify-content-between">
+									<li class="nav-item">
 										<!-- <li class="nav-item active"> -->
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#empresa"><h6 class="m-0">Empresa</h6></a>
-											<!-- <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a> -->
-										</li>
-										<li class="nav-item">
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#servicios"><h6 class="m-0">Servicios</h6></a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#productos"><h6 class="m-0">Productos</h6></a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link text-uppercase py-2 py-sm-0" href="#contacto"><h6 class="m-0">Contacto</h6></a>
-										</li
-									</ul>
-								</div>
-								<div class="col-2 col-sm-4 d-flex justify-content-end flex-column flex-sm-row">
-									<a href="https://wa.me/5493518143149" target="_blank">
-										<img class="nav-link-icon" src="./images/whatsapp-icon.svg" height="24" alt="WhatsApp" loading="lazy">
-									</a>
-									<a href="https://instagram.com/estankaluminio" target="_blank">
-										<img class="nav-link-icon mt-3 mt-sm-0 ml-sm-3" src="./images/instagram-icon.svg" height="24" alt="Instagram" loading="lazy">
-									</a>
-									<a href="https://www.facebook.com/estankaluminio" target="_blank">
-										<img class="nav-link-icon mt-3 mt-sm-0 ml-sm-3" src="./images/facebook-icon.svg" height="24" alt="Facebook" loading="lazy">
-									</a>
-								</div>
+										<a class="nav-link text-uppercase py-3 py-sm-2 py-sm-0" href="#empresa">
+											<h6 class="m-0">Empresa</h6>
+										</a>
+										<!-- <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a> -->
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-uppercase py-3 py-sm-2 py-sm-0" href="#servicios">
+											<h6 class="m-0">Servicios</h6>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-uppercase py-3 py-sm-2 py-sm-0" href="#productos">
+											<h6 class="m-0">Productos</h6>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-uppercase py-3 py-sm-2 py-sm-0" href="#contacto">
+											<h6 class="m-0">Contacto</h6>
+										</a>
+									</li </ul>
+							</div>
+							<div class="col-2 col-sm-4 d-flex justify-content-end flex-column flex-sm-row">
+								<a href="https://wa.me/5493518143149" target="_blank">
+									<img class="nav-link-icon" src="./images/whatsapp-icon.svg" height="24" alt="WhatsApp" loading="lazy">
+								</a>
+								<a href="https://instagram.com/estankaluminio" target="_blank">
+									<img class="nav-link-icon mt-3 mt-sm-0 ml-sm-3" src="./images/instagram-icon.svg" height="24"
+										alt="Instagram" loading="lazy">
+								</a>
+								<a href="https://www.facebook.com/estankaluminio" target="_blank">
+									<img class="nav-link-icon mt-3 mt-sm-0 ml-sm-3" src="./images/facebook-icon.svg" height="24"
+										alt="Facebook" loading="lazy">
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</nav>
+			</div>
+		</nav>
 
-			<section class="hero">
-				<div id="mainCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#mainCarousel" data-slide-to="1"></li>
-						<li data-target="#mainCarousel" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item bg-primary active">
-							<div class="container mx-auto">
-								<div class="d-flex flex-column justify-content-between" move-range="1,-1">
-									<h3 class="text-white">DETALLES QUE MARCAN LA DIFERENCIA.</h3>
-									<img class="long-text small-margin w-100" src="./images/produccion-text.svg" move-range="2,-2"/>
-									<p class="text-primary-light font-weight-light">Innovación, conocimientos y calidad solo permiten un resultado: la excelencia.</p>
-								</div>
-								<img src="./images/produccion-icon.svg" move-range="0,-20" class="floating-image" alt="Produccion">
+		<section class="hero">
+			<div id="mainCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mainCarousel" data-slide-to="1"></li>
+					<li data-target="#mainCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item bg-primary active">
+						<div class="container mx-auto">
+							<div class="d-flex flex-column justify-content-between" move-range="1,-1">
+								<h4 class="text-primary-dark text-uppercase">Producción</h4>
+								<h3 class="text-white">DETALLES QUE MARCAN LA DIFERENCIA.</h3>
+								<img class="long-text small-margin w-100" src="./images/produccion-text.svg" move-range="2,-2" />
+								<p class="text-primary-light font-weight-light">Innovación, conocimientos y calidad solo permiten un
+									resultado: la excelencia.</p>
 							</div>
+							<img src="./images/produccion-icon.svg" move-range="0,-20" class="floating-image" alt="Produccion">
 						</div>
-						<div class="carousel-item bg-primary">
-							<div class="container mx-auto">
-								<div class="d-flex flex-column justify-content-between" move-range="1,-1">
-									<h3 class="text-white">TRABAJO QUE LLEGA EN LAS MEJORES MANOS.</h3>
-									<img class="long-text w-100" src="./images/transporte-text.svg" move-range="2,-2" />
-									<p class="text-primary-light font-weight-light">Desde Córdoba a todo el país asegurando las condiciones óptimas de cuidado y traslado.</p>
-								</div>
-								<img src="./images/transporte-icon.svg" move-range="0,-20" class="floating-image" alt="Transporte">
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="container mx-auto">
+							<div class="d-flex flex-column justify-content-between" move-range="1,-1">
+								<h4 class="text-primary-dark text-uppercase">Transporte</h4>
+								<h3 class="text-white">TRABAJO QUE LLEGA EN LAS MEJORES MANOS.</h3>
+								<img class="long-text w-100" src="./images/transporte-text.svg" move-range="2,-2" />
+								<p class="text-primary-light font-weight-light">Desde Córdoba a todo el país asegurando las condiciones
+									óptimas de cuidado y traslado.</p>
 							</div>
+							<img src="./images/transporte-icon.svg" move-range="0,-20" class="floating-image" alt="Transporte">
 						</div>
-						<div class="carousel-item bg-primary">
-							<div class="container mx-auto">
-								<div class="d-flex flex-column justify-content-between" move-range="1,-1">
-									<h3 class="text-white">CONFIANZA ES LA BASE DE LOS MEJORES TRABAJOS.</h3>
-									<img class="long-text w-100" src="./images/asesoramiento-text.svg" move-range="2,-2" />
-									<p class="text-primary-light font-weight-light">Asesoramiento especilizado y personalizado para llegar a los mejores resultados.</p>
-								</div>
-								<img src="./images/asesoramiento-icon.svg" move-range="0,-20" class="floating-image" alt="Asesoramiento">
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="container mx-auto">
+							<div class="d-flex flex-column justify-content-between" move-range="1,-1">
+								<h4 class="text-primary-dark text-uppercase">Asesoramiento</h4>
+								<h3 class="text-white">CONFIANZA ES LA BASE DE LOS MEJORES TRABAJOS.</h3>
+								<img class="long-text w-100" src="./images/asesoramiento-text.svg" move-range="2,-2" />
+								<p class="text-primary-light font-weight-light">Asesoramiento especilizado y personalizado para llegar a
+									los mejores resultados.</p>
+							</div>
+							<img src="./images/asesoramiento-icon.svg" move-range="0,-20" class="floating-image" alt="Asesoramiento">
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="company" id="empresa">
+			<div class="container py-5">
+				<div class="row justify-content-center animate">
+					<h1 class="text-primary text-uppercase mb-4">
+						EMPRESA
+					</h1>
+				</div>
+				<div class="row justify-content-center animate">
+					<div class="col-sm-10">
+						<div class="row company-wrapper m-3 m-sm-0">
+							<div class="col-sm-12 company-box">
+								<p class="text-primary font-weight-bold mb-0 pr-3 pr-lg-4">
+									Asociamos lo estructural, rígido y firme con cualidades poco amigables en la sociedad. <br>
+									Pero existe una certeza, no se puede imaginar un mundo sin firmeza. Sobre la tierra y piedra vivimos.
+									<br>
+									En la seguridad de una perfecta dureza y arquitectura se basa la calidad de una ciudad, de una casa
+									o un proyecto, incluso de vida. Ser firmes es lo que nos hace madurar, crecer, evolucionar,
+									perseverar. <br><br>
+									Por eso trabajamos y confiamos en nuestra materia prima, el aluminio. Fiel, durable y elegante, pero
+									también con el grado justo de flexibilidad para poder adaptarse a miles de usos. Somos Estanka,
+									una empresa con valores consolidados y productos en aluminio de alta calidad con una visión clara:
+									el presente es evolución.
+								</p>
+							</div>
+							<div class="col-sm-8 company-box">
+								<p class="text-primary mb-0 pr-3 pr-lg-4">
+									Somos una empresa dedicada al diseño, fabricación e instalación de aberturas,
+									cerramientos y estructuras a pedido de aluminio, con altos estándares de calidad
+									y detalle. Contamos con equipamiento de avanzada que permite la fabricación de
+									productos con máxima calidad.
+								</p>
+								<p class="text-primary font-weight-bold font-italic mb-0 mt-4 pr-3 pr-lg-4">
+									- Garantizamos la calidad de nuestros productos. <br>
+									- Atención personalizada y asesoramiento profesional. <br>
+									- Productos a medida según la necesidad del cliente. <br>
+									- Responsabilidad y puntualidad en la entrega.
+								</p>
+							</div>
+							<div class="col-sm-2 company-box box-pattern"></div>
+							<div class="col-sm-2 company-box box-shapes">
+								<img src="./images/shape-1.svg" alt="Shape 1">
+								<img src="./images/shape-2.svg" alt="Shape 2">
+								<img src="./images/shape-3.svg" alt="Shape 3">
+								<img src="./images/shape-4.svg" alt="Shape 4">
+								<img src="./images/shape-5.svg" alt="Shape 5">
+							</div>
+							<div class="col-sm-8 company-box py-3">
+								<h5 class="font-base m-0 text-primary font-weight-light">
+									Córdoba - Arg.
+								</h5>
+							</div>
+							<div class="col-sm-2 company-box py-3 d-none d-sm-block">
+							</div>
+							<div class="col-sm-2 company-box p-3 d-none d-sm-block">
+								<img src="./images/estanka-logo-center.svg" alt="Logo Estanka">
 							</div>
 						</div>
 					</div>
-					<a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="company" id="empresa">
-				<div class="container py-5">
-					<div class="row justify-content-center animate">
+		<section class="services py-5 bg-primary" id="servicios">
+			<div class="container p-4 p-sm-0">
+				<div class="row justify-content-center animate">
+					<h1 class="text-white text-uppercase mb-5">
+						Servicios
+					</h1>
+				</div>
+				<div class="row justify-content-around mb-0 mb-sm-4 animate">
+					<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
+						<div class="d-block d-sm-flex align-items-sm-start">
+							<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-1.svg" width="80" alt="Asesoriamiento">
+							<div class="ml-sm-4">
+								<h4 class="text-primary-light m-0">Asesoramiento</h4>
+								<div class="separator mt-4 mb-3"></div>
+								<p class="text-white font-weight-light">
+									Respondemos cualquier consulta o inquietud
+									sobre todo tipo de aberturas. Saber lo que se
+									necesita, es saber trabajar mejor.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
+						<div class="d-block d-sm-flex align-items-sm-start">
+							<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-2.svg" width="80" alt="Asesoriamiento">
+							<div class="ml-sm-4">
+								<h4 class="text-primary-light m-0">Instalaciones</h4>
+								<div class="separator mt-4 mb-3"></div>
+								<p class="text-white font-weight-light">
+									Verificamos en obra las medidas de cada una de
+									sus aberturas, para que luego nuestro equipo
+									realice la fijación y regulación, garantizando un
+									funcionamiento óptimo y un producto de excelencia.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-around mb-0 mb-sm-4">
+					<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
+						<div class="d-block d-sm-flex align-items-sm-start">
+							<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-3.svg" width="80" alt="Asesoriamiento">
+							<div class="ml-sm-4">
+								<h4 class="text-primary-light m-0">Producción</h4>
+								<div class="separator mt-4 mb-3"></div>
+								<p class="text-white font-weight-light">
+									Contamos con maquinaria de avanzada para lograr
+									cortes precisos y terminaciones perfectas.
+									Los detalles hacen la diferencia.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
+						<div class="d-block d-sm-flex align-items-sm-start">
+							<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-4.svg" width="80" alt="Asesoriamiento">
+							<div class="ml-sm-4">
+								<h4 class="text-primary-light m-0">Garantía</h4>
+								<div class="separator mt-4 mb-3"></div>
+								<p class="text-white font-weight-light">
+									Única empresa que cuenta con garantía de
+									fabricación en caso de fallas o averías.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-around">
+					<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
+						<div class="d-block d-sm-flex align-items-sm-start">
+							<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-5.svg" width="80" alt="Asesoriamiento">
+							<div class="ml-sm-4">
+								<h4 class="text-primary-light m-0">Entrega en obra</h4>
+								<div class="separator mt-4 mb-3"></div>
+								<p class="text-white font-weight-light">
+									Realizamos las entregas de aberturas en obra con
+									transporte propio, asegurando que las mismas lleguen
+									a su destino en perfectas condiciones y garantizando
+									puntualidad en la entrega.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xxl-5">
+						<div class="d-block d-sm-flex align-items-sm-start">
+							<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-6.svg" width="80" alt="Asesoriamiento">
+							<div class="ml-sm-4">
+								<h4 class="text-primary-light m-0">Post Venta</h4>
+								<div class="separator mt-4 mb-3"></div>
+								<p class="text-white font-weight-light">
+									Contamos con un servicio técnico que responderá
+									a la brevedad cualquier consulta que pudiera surgir
+									con el paso del tiempo.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery">
+			<div id="galleryCarousel" class="carousel slide carousel-fade d-none d-sm-block" data-ride="carousel">
+				<div class="carousel-inner bg-primary">
+					<div class="carousel-item bg-primary active">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-1.jpg" alt="Imagen de producto">
+						</div>
+						<div class="carousel-item-col">
+							<img src="./images/gallery-3.jpg" alt="Imagen de producto">
+						</div>
+						<div class="carousel-item-col">
+							<img src="./images/gallery-2.jpg" alt="Imagen de producto">
+						</div>
+						<div class="carousel-item-col">
+							<img src="./images/gallery-6.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-7.jpg" alt="Imagen de producto">
+						</div>
+						<div class="carousel-item-col">
+							<img src="./images/gallery-5.jpg" alt="Imagen de producto">
+						</div>
+						<div class="carousel-item-col">
+							<img src="./images/gallery-8.jpg" alt="Imagen de producto">
+						</div>
+						<div class="carousel-item-col">
+							<img src="./images/gallery-4.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-inner bg-primary d-block d-sm-none">
+					<div class="carousel-item bg-primary active">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-1.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-3.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-2.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-6.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-7.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-5.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-8.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-4.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="galleryCarouselMobile" class="carousel slide carousel-fade d-block d-sm-none" data-ride="carousel">
+				<div class="carousel-inner bg-primary">
+					<div class="carousel-item bg-primary active">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-1.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-3.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-2.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-6.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-7.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-5.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-8.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+					<div class="carousel-item bg-primary">
+						<div class="carousel-item-col">
+							<img src="./images/gallery-4.jpg" alt="Imagen de producto">
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#galleryCarouselMobile" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#galleryCarouselMobile" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+
+
+		<section class="products py-5" id="productos">
+			<div class="container p-4 p-sm-0 animate">
+				<div class="row justify-content-center">
+					<div class="col-sm-9 text-center">
 						<h1 class="text-primary text-uppercase mb-4">
-							EMPRESA
+							Productos
 						</h1>
-					</div>
-					<div class="row justify-content-center animate">
-						<div class="col-sm-10">
-							<div class="row company-wrapper m-3 m-sm-0">
-								<div class="col-sm-12 company-box">
-									<p class="text-primary font-weight-bold mb-0 pr-0 pr-lg-4">
-										Asociamos lo estructural, rígido y firme con cualidades poco amigables en la sociedad. <br>
-										Pero existe una certeza, no se puede imaginar un mundo sin firmeza. Sobre la tierra y piedra vivimos. <br>
-										En la seguridad de una perfecta dureza y arquitectura se basa la calidad de una ciudad, de una casa
-										o un proyecto, incluso de vida. Ser firmes es lo que nos hace madurar, crecer, evolucionar, perseverar. <br><br>
-										Por eso trabajamos y confiamos en nuestra materia prima, el aluminio. Fiel, durable y elegante, pero
-										también con el grado justo de flexibilidad para poder adaptarse a miles de usos. Somos Estanka,
-										una empresa con valores consolidados y productos en aluminio de alta calidad con una visión clara:
-										el presente es evolución.
-									</p>
-								</div>
-								<div class="col-sm-8 company-box">
-									<p class="text-primary mb-0 pr-0 pr-lg-4">
-										Somos una empresa dedicada al diseño, fabricación e instalación de aberturas,
-										cerramientos y estructuras a pedido de aluminio, con altos estándares de calidad
-										y detalle. Contamos con equipamiento de avanzada que permite la fabricación de
-										productos con máxima calidad.
-									</p>
-									<p class="text-primary font-weight-bold font-italic mb-0 mt-4 pr-0 pr-lg-4">
-										- Garantizamos la calidad de nuestros productos. <br>
-										- Atención personalizada y asesoramiento profesional. <br>
-										- Productos a medida según la necesidad del cliente. <br>
-										- Responsabilidad y puntualidad en la entrega.
-									</p>
-								</div>
-								<div class="col-sm-2 company-box box-pattern"></div>
-								<div class="col-sm-2 company-box box-shapes">
-									<img src="./images/shape-1.svg" alt="Shape 1">
-									<img src="./images/shape-2.svg" alt="Shape 2">
-									<img src="./images/shape-3.svg" alt="Shape 3">
-									<img src="./images/shape-4.svg" alt="Shape 4">
-									<img src="./images/shape-5.svg" alt="Shape 5">
-								</div>
-								<div class="col-sm-8 company-box py-3">
-									<h5 class="font-base m-0 text-primary font-weight-light">
-										Córdoba - Arg.
-									</h5>
-								</div>
-								<div class="col-sm-2 company-box py-3 d-none d-sm-block">
-								</div>
-								<div class="col-sm-2 company-box p-3 d-none d-sm-block">
-									<img src="./images/estanka-logo-center.svg" alt="Logo Estanka">
-								</div>
-							</div>
-						</div>
+						<h4 class="text-primary-light font-base">
+							Productos de alta calidad diseñados a pedido y
+							a medida de tus necesidades. Lograr el máximo nivel de
+							detalle en todo lo que hacemos es nuestro objetivo.
+						</h4>
 					</div>
 				</div>
-			</section>
-
-			<section class="services py-5 bg-primary" id="servicios">
-				<div class="container p-4 p-sm-0">
-					<div class="row justify-content-center animate">
-						<h1 class="text-white text-uppercase mb-5">
-							Servicios
-						</h1>
-					</div>
-					<div class="row justify-content-around mb-4 animate">
-						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
-							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-1.svg" width="80" alt="Asesoriamiento">
-								<div class="ml-sm-4">
-									<h4 class="text-primary-light m-0">Asesoramiento</h4>
-									<div class="separator mt-4 mb-3"></div>
-									<p class="text-white font-weight-light">
-										Respondemos cualquier consulta o inquietud
-										sobre todo tipo de aberturas. Saber lo que se
-										necesita, es saber trabajar mejor.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
-							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-2.svg" width="80" alt="Asesoriamiento">
-								<div class="ml-sm-4">
-									<h4 class="text-primary-light m-0">Instalaciones</h4>
-									<div class="separator mt-4 mb-3"></div>
-									<p class="text-white font-weight-light">
-										Verificamos en obra las medidas de cada una de
-										sus aberturas, para que luego nuestro equipo
-										realice la fijación y regulación, garantizando un
-										funcionamiento óptimo y un producto de excelencia.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row justify-content-around mb-4">
-						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
-							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-3.svg" width="80" alt="Asesoriamiento">
-								<div class="ml-sm-4">
-									<h4 class="text-primary-light m-0">Producción</h4>
-									<div class="separator mt-4 mb-3"></div>
-									<p class="text-white font-weight-light">
-										Contamos con maquinaria de avanzada para lograr
-										cortes precisos y terminaciones perfectas.
-										Los detalles hacen la diferencia.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
-							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-4.svg" width="80" alt="Asesoriamiento">
-								<div class="ml-sm-4">
-									<h4 class="text-primary-light m-0">Garantía</h4>
-									<div class="separator mt-4 mb-3"></div>
-									<p class="text-white font-weight-light">
-										Única empresa que cuenta con garantía de
-										fabricación en caso de fallas o averías.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row justify-content-around">
-						<div class="col-sm-6 col-xxl-5 mb-4 mb-sm-0">
-							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-5.svg" width="80" alt="Asesoriamiento">
-								<div class="ml-sm-4">
-									<h4 class="text-primary-light m-0">Entrega en obra</h4>
-									<div class="separator mt-4 mb-3"></div>
-									<p class="text-white font-weight-light">
-										Realizamos las entregas de aberturas en obra con
-										transporte propio, asegurando que las mismas lleguen
-										a su destino en perfectas condiciones y garantizando
-										puntualidad en la entrega.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xxl-5">
-							<div class="d-block d-sm-flex align-items-sm-start">
-								<img class="service-icon mb-3 mb-sm-0" src="./images/service-icon-6.svg" width="80" alt="Asesoriamiento">
-								<div class="ml-sm-4">
-									<h4 class="text-primary-light m-0">Post Venta</h4>
-									<div class="separator mt-4 mb-3"></div>
-									<p class="text-white font-weight-light">
-										Contamos con un servicio técnico que responderá
-										a la brevedad cualquier consulta que pudiera surgir
-										con el paso del tiempo.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="gallery">
-				<div id="galleryCarousel" class="carousel slide carousel-fade d-none d-sm-block" data-ride="carousel">
-					<div class="carousel-inner bg-primary">
-						<div class="carousel-item bg-primary active">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-1.jpg" alt="Imagen de producto">
-							</div>
-							<div class="carousel-item-col">
-								<img src="./images/gallery-3.jpg" alt="Imagen de producto">
-							</div>
-							<div class="carousel-item-col">
-								<img src="./images/gallery-2.jpg" alt="Imagen de producto">
-							</div>
-							<div class="carousel-item-col">
-								<img src="./images/gallery-6.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-7.jpg" alt="Imagen de producto">
-							</div>
-							<div class="carousel-item-col">
-								<img src="./images/gallery-5.jpg" alt="Imagen de producto">
-							</div>
-							<div class="carousel-item-col">
-								<img src="./images/gallery-8.jpg" alt="Imagen de producto">
-							</div>
-							<div class="carousel-item-col">
-								<img src="./images/gallery-4.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-					</div>
-					<div class="carousel-inner bg-primary d-block d-sm-none">
-						<div class="carousel-item bg-primary active">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-1.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-3.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-2.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-6.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-7.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-5.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-8.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-4.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-					</div>
-					<a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
+			</div>
+			<hr class="mt-4 mb-5 mx-2 mx-sm-5">
+			<div class="d-flex flex-column align-items-center w-100 animate">
+				<div class="container text-center p-4 p-sm-0">
+					<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseAberturas" role="button"
+						aria-expanded="false" aria-controls="collapseAberturas">
+						Aberturas
 					</a>
 				</div>
-				<div id="galleryCarouselMobile" class="carousel slide carousel-fade d-block d-sm-none" data-ride="carousel">
-					<div class="carousel-inner bg-primary">
-						<div class="carousel-item bg-primary active">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-1.jpg" alt="Imagen de producto">
+
+				<div class="collapse pt-3 py-sm-5 mt-0 mt-sm-4 w-100" id="collapseAberturas">
+					<div class="container p-4 p-sm-0">
+						<div class="row">
+							<div class="col-sm-5">
+								<h4 class="h4 text-primary text-uppercase mb-0">Abertura</h4>
+								<h4 class="display-3 text-primary text-uppercase">A40</h4>
+								<div class="separator mt-3 mb-4"></div>
+								<p>
+									Diseño de vanguardia y estética minimalista de líneas rectas.
+									Desarrollo innovador en aberturas corredizas de gran tamaño
+									con excelente hermeticidad, para viviendas de alta gama y
+									edificios en altura. Permite la realización de aberturas de gran
+									tamaño y peso con alta resistencia a las cargas de viento,
+									además de ofrecer parantes reforzados y umbrales con mayor
+									tamaño de caja de agua.
+									<br><br>
+									Admite la utilización de vidrio simple o DVH hasta 32 mm.
+								</p>
+							</div>
+							<div class="col-sm-6 offset-sm-1">
+								<img src="./images/abertura-a40.jpg" class="img-fluid" alt="Abertura A40">
+								<div class="mt-3 table-wrapper">
+									<div class="row">
+										<div class="col-sm-3 table-cell">Ventana desplazable</div>
+										<div class="col-sm-3 table-cell">Paño fijo</div>
+										<div class="col-sm-6 table-cell">Puerta de rebatir de 1 y 2 hojas</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-7 table-cell">Ventana de abrir oscilobatiente de 1 y 2 hojas</div>
+										<div class="col-sm-5 table-cell">Puerta vaivén de 1 y 2 hojas</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 table-cell">Ventana y Puerta corrediza de 2, 3 y 4 hojas con hojas con corte a
+											90° o a 45°</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-3.jpg" alt="Imagen de producto">
+
+						<div class="row mt-5">
+							<div class="col-sm-5">
+								<h4 class="h4 text-primary text-uppercase mb-0">Abertura</h4>
+								<h4 class="display-3 text-primary text-uppercase">A30</h4>
+								<div class="separator mt-3 mb-4"></div>
+								<p>
+									El estilo y elegancia de sus líneas redondeadas, sus amplias
+									posibilidades constructivas y la variedad de tipologías, le
+									ofrecen al arquitecto una herramienta de alta prestación en la
+									realización de los proyectos. Resiste el paso del tiempo, sus
+									perfiles no requieren ningún tipo de mantenimiento y admiten
+									tratamiento superficial como el pintado o anodizado.
+									<br><br>
+									Admite vidrio simple o Doble Vidriado Hermético (DVH).
+								</p>
+							</div>
+							<div class="col-sm-6 offset-sm-1">
+								<img src="./images/abertura-a30.jpg" class="img-fluid" alt="Abertura A30">
+								<div class="mt-3 table-wrapper">
+									<div class="row">
+										<div class="col-sm-3 table-cell">Ventana desplazable</div>
+										<div class="col-sm-3 table-cell">Paño fijo</div>
+										<div class="col-sm-6 table-cell">Puerta de rebatir de 1 y 2 hojas</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-7 table-cell">Ventana y Puerta corrediza de 2, 3 y 4 hojas</div>
+										<div class="col-sm-5 table-cell">Puerta vaivén de 1 y 2 hojas</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-3 table-cell cell-pattern"></div>
+										<div class="col-sm-9 table-cell">Ventana de abrir oscilobatiente de 1 y 2 hojas</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-2.jpg" alt="Imagen de producto">
+
+						<div class="row mt-5">
+							<div class="col-sm-5">
+								<h4 class="h4 text-primary text-uppercase mb-0">Abertura</h4>
+								<h4 class="display-3 text-primary text-uppercase text-reponsive">MODENA</h4>
+								<div class="separator mt-3 mb-4"></div>
+								<p>
+									Es el Sistema de Carpintería de Aluar que ha creado un
+									estándar debido a su diseño y al equilibrio peso/resistencia.
+									Su uso extendido lo transforma en el sistema más tradicional
+									entre los carpinteros argentinos. La línea Módena le brinda
+									al diseñador una gran variedad de combinaciones.
+									<br><br>
+									Admite vidrio simple o Doble Vidriado Hermético (DVH).
+								</p>
 							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-6.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-7.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-5.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-8.jpg" alt="Imagen de producto">
-							</div>
-						</div>
-						<div class="carousel-item bg-primary">
-							<div class="carousel-item-col">
-								<img src="./images/gallery-4.jpg" alt="Imagen de producto">
+							<div class="col-sm-6 offset-sm-1">
+								<img src="./images/abertura-modena.jpg" class="img-fluid" alt="Abertura Modena">
+								<div class="mt-3 table-wrapper">
+									<div class="row">
+										<div class="col-sm-3 table-cell">Ventana desplazable</div>
+										<div class="col-sm-3 table-cell">Paño fijo</div>
+										<div class="col-sm-6 table-cell">Puerta de rebatir de 1 y 2 hojas</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-7 table-cell">Ventana y Puerta Corrediza corte a 45° y 90º</div>
+										<div class="col-sm-5 table-cell">Ventana de abrir oscilobatiente</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-3 table-cell">Puerta de rebatir</div>
+										<div class="col-sm-3 table-cell">Ventana banderola</div>
+										<div class="col-sm-3 table-cell">Ventana banderola</div>
+										<div class="col-sm-3 table-cell">Ventana ventiluz</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<a class="carousel-control-prev" href="#galleryCarouselMobile" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
+				</div>
+
+				<div class="container text-center mt-0 mt-sm-4 p-4 p-sm-0">
+					<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseVidrios" role="button"
+						aria-expanded="false" aria-controls="collapseVidrios">
+						Vidrios
 					</a>
-					<a class="carousel-control-next" href="#galleryCarouselMobile" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
+				</div>
+
+				<div class="collapse bg-primary-light py-5 mt-0 mt-sm-4 w-100" id="collapseVidrios">
+					<div class="container p-4 p-sm-0">
+						<div class="row">
+							<div class="col-sm-6 pr-3 pr-lg-5 pr-md-3 mb-5">
+								<div class="row">
+									<div class="col-9">
+										<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
+										<h4 class="display-4 text-white text-uppercase">Simple</h4>
+										<div class="separator bg-primary mt-3 mb-4"></div>
+									</div>
+									<div class="col-3">
+										<img src="./images/vidrio-simple.svg" class="img-fluid" alt="Vidrio Simple">
+									</div>
+								</div>
+								<p class="text-white font-weight-light">
+									Tradicionalmente denominado cristal plano. Es un cristal
+									plano transparente, libre de distorsión que tiene sus caras
+									planas y paralelas con sus superficies brillantes, pulidas a fuego.
+								</p>
+							</div>
+							<div class="col-sm-6 pl-3 pl-lg-5 pl-md-3 mb-5">
+								<div class="row">
+									<div class="col-9">
+										<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
+										<h4 class="display-4 text-white text-uppercase text-reponsive">Laminado</h4>
+										<div class="separator bg-primary mt-3 mb-4"></div>
+									</div>
+									<div class="col-3">
+										<img src="./images/vidrio-laminado.svg" class="img-fluid" alt="Vidrio Simple">
+									</div>
+								</div>
+								<p class="text-white font-weight-light">
+									Compuesto por dos o más hojas de vidrio unidas entre sí por
+									una lámina de PVB (Polivinil Butiral), mediante un proceso de
+									calor y presión. Ante la rotura, los trozos de vidrio quedan adheridos
+									a la lámina de PVB, presentando gran resistencia al traspaso,
+									evitando que las personas se lastimen.
+								</p>
+							</div>
+							<div class="col-sm-6 pr-3 pr-lg-5 pr-md-3 mb-5 mb-sm-0">
+								<div class="row">
+									<div class="col-9">
+										<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
+										<h4 class="display-4 text-white text-uppercase">DVH</h4>
+										<div class="separator bg-primary mt-3 mb-4"></div>
+									</div>
+									<div class="col-3">
+										<img src="./images/vidrio-dvh.svg" class="img-fluid" alt="Vidrio Simple">
+									</div>
+								</div>
+								<p class="text-white font-weight-light">
+									Mejoran la eficiencia energética de hogares y edificios mediante el
+									aumento de la aislación térmica, al tiempo que permiten un uso
+									extensivo del vidrio. Compuesto por dos vidrios simples, separados
+									entre sí por una cámara de aire seco y quieto que le da su capacidad
+									de aislante térmico, sellado al paso de la humedad y al vapor de agua.
+								</p>
+							</div>
+							<div class="col-sm-6 pl-3 pl-lg-5 pl-md-3">
+								<div class="row">
+									<div class="col-9">
+										<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
+										<h4 class="display-4 text-white text-uppercase">Blidex</h4>
+										<div class="separator bg-primary mt-3 mb-4"></div>
+									</div>
+									<div class="col-3">
+										<img src="./images/vidrio-blidex.svg" class="img-fluid" alt="Vidrio Simple">
+									</div>
+								</div>
+								<p class="text-white font-weight-light">
+									Es un vidrio con una resistencia al impacto 4 veces superior
+									a la de un vidrio crudo. Además, en caso de rotura lo hace
+									en pequeños fragmentos sin aristas filosas, evitando heridas
+									cortantes o lacerantes a las personas.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container text-center mt-0 mt-sm-4 p-4 p-sm-0">
+					<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseOtros" role="button"
+						aria-expanded="false" aria-controls="collapseOtros">
+						Otros
 					</a>
 				</div>
-			</section>
 
-
-			<section class="products py-5" id="productos">
-				<div class="container p-4 p-sm-0 animate">
-					<div class="row justify-content-center">
-						<div class="col-sm-9 text-center">
-							<h1 class="text-primary text-uppercase mb-4">
-								Productos
-							</h1>
-							<h4 class="text-primary-light font-base">
-								Productos de alta calidad diseñados a pedido y
-								a medida de tus necesidades. Lograr el máximo nivel de
-								detalle en todo lo que hacemos es nuestro objetivo.
-							</h4>
-						</div>
-					</div>
-				</div>
-				<hr class="mt-4 mb-5 mx-2 mx-sm-5">
-				<div class="d-flex flex-column align-items-center w-100 animate">
-					<div class="container text-center p-4 p-sm-0">
-						<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseAberturas" role="button" aria-expanded="false" aria-controls="collapseAberturas">
-							Aberturas
-						</a>
-					</div>
-					
-					<div class="collapse py-5 mt-4 w-100" id="collapseAberturas">
-						<div class="container p-4 p-sm-0">
-							<div class="row">
-								<div class="col-sm-5">
-									<h4 class="h4 text-primary text-uppercase mb-0">Abertura</h4>
-									<h4 class="display-3 text-primary text-uppercase">A40</h4>
-									<div class="separator mt-3 mb-4"></div>
-									<p>
-										Diseño de vanguardia y estética minimalista de líneas rectas.
-										Desarrollo innovador en aberturas corredizas de gran tamaño
-										con excelente hermeticidad, para viviendas de alta gama y
-										edificios en altura. Permite la realización de aberturas de gran
-										tamaño y peso con alta resistencia a las cargas de viento,
-										además de ofrecer parantes reforzados y umbrales con mayor
-										tamaño de caja de agua.
-										<br><br>
-										Admite la utilización de vidrio simple o DVH hasta 32 mm.
-									</p>
-								</div>
-								<div class="col-sm-6 offset-sm-1">
-									<img src="./images/abertura-a40.jpg" class="img-fluid" alt="Abertura A40">
-									<div class="mt-3 table-wrapper">
-										<div class="row">
-											<div class="col-sm-3 table-cell">Ventana desplazable</div>
-											<div class="col-sm-3 table-cell">Paño fijo</div>
-											<div class="col-sm-6 table-cell">Puerta de rebatir de 1 y 2 hojas</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-7 table-cell">Ventana de abrir oscilobatiente de 1 y 2 hojas</div>
-											<div class="col-sm-5 table-cell">Puerta vaivén de 1 y 2 hojas</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12 table-cell">Ventana y Puerta corrediza de 2, 3 y 4 hojas con hojas con corte a 90° o a 45°</div>
-										</div>
-									</div>
-								</div>
+				<div class="collapse bg-primary py-5 mt-0 mt-sm-4 w-100" id="collapseOtros">
+					<div class="container p-4 p-sm-0">
+						<div class="row">
+							<div class="col-sm-6 pr-5 mb-4 mb-sm-0">
+								<h4 class="display-4 text-white text-uppercase">Persianas</h4>
+								<div class="separator mt-3 mb-4"></div>
+								<p class="text-white">
+									Manuales o automatizadas, con ellas podremos atenuar, controlar y
+									regular de manera efectiva el aislamiento térmico, acústico y visual.
+									La protección solar o la radiación excesiva. La ventilación en verano,
+									la humedad. La seguridad de la vivienda. El exceso o falta de
+									iluminación natural. Efectos del granizo.
+								</p>
 							</div>
-
-							<div class="row mt-5">
-								<div class="col-sm-5">
-									<h4 class="h4 text-primary text-uppercase mb-0">Abertura</h4>
-									<h4 class="display-3 text-primary text-uppercase">A30</h4>
-									<div class="separator mt-3 mb-4"></div>
-									<p>
-										El estilo y elegancia de sus líneas redondeadas, sus amplias
-										posibilidades constructivas y la variedad de tipologías, le
-										ofrecen al arquitecto una herramienta de alta prestación en la
-										realización de los proyectos. Resiste el paso del tiempo, sus
-										perfiles no requieren ningún tipo de mantenimiento y admiten
-										tratamiento superficial como el pintado o anodizado.
-										<br><br>
-										Admite vidrio simple o Doble Vidriado Hermético (DVH).
-									</p>
-								</div>
-								<div class="col-sm-6 offset-sm-1">
-									<img src="./images/abertura-a30.jpg" class="img-fluid" alt="Abertura A30">
-									<div class="mt-3 table-wrapper">
-										<div class="row">
-											<div class="col-sm-3 table-cell">Ventana desplazable</div>
-											<div class="col-sm-3 table-cell">Paño fijo</div>
-											<div class="col-sm-6 table-cell">Puerta de rebatir de 1 y 2 hojas</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-7 table-cell">Ventana y Puerta corrediza de 2, 3 y 4 hojas</div>
-											<div class="col-sm-5 table-cell">Puerta vaivén de 1 y 2 hojas</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-3 table-cell cell-pattern"></div>
-											<div class="col-sm-9 table-cell">Ventana de abrir oscilobatiente de 1 y 2 hojas</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row mt-5">
-								<div class="col-sm-5">
-									<h4 class="h4 text-primary text-uppercase mb-0">Abertura</h4>
-									<h4 class="display-3 text-primary text-uppercase">MODENA</h4>
-									<div class="separator mt-3 mb-4"></div>
-									<p>
-										Es el Sistema de Carpintería de Aluar que ha creado un
-										estándar debido a su diseño y al equilibrio peso/resistencia.
-										Su uso extendido lo transforma en el sistema más tradicional
-										entre los carpinteros argentinos. La línea Módena le brinda
-										al diseñador una gran variedad de combinaciones.
-										<br><br>
-										Admite vidrio simple o Doble Vidriado Hermético (DVH).
-									</p>
-								</div>
-								<div class="col-sm-6 offset-sm-1">
-									<img src="./images/abertura-modena.jpg" class="img-fluid" alt="Abertura Modena">
-									<div class="mt-3 table-wrapper">
-										<div class="row">
-											<div class="col-sm-3 table-cell">Ventana desplazable</div>
-											<div class="col-sm-3 table-cell">Paño fijo</div>
-											<div class="col-sm-6 table-cell">Puerta de rebatir de 1 y 2 hojas</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-7 table-cell">Ventana y Puerta Corrediza corte a 45° y 90º</div>
-											<div class="col-sm-5 table-cell">Ventana de abrir oscilobatiente</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-3 table-cell">Puerta de rebatir</div>
-											<div class="col-sm-3 table-cell">Ventana banderola</div>
-											<div class="col-sm-3 table-cell">Ventana banderola</div>
-											<div class="col-sm-3 table-cell">Ventana ventiluz</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="container text-center mt-4 p-4 p-sm-0">
-						<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseVidrios" role="button" aria-expanded="false" aria-controls="collapseVidrios">
-							Vidrios
-						</a>
-					</div>
-
-					<div class="collapse bg-primary-light py-5 mt-4 w-100" id="collapseVidrios">
-						<div class="container p-4 p-sm-0">
-							<div class="row">
-								<div class="col-sm-6 pr-0 pr-lg-5 pr-md-3 mb-5">
-									<div class="row">
-										<div class="col-9">
-											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
-											<h4 class="display-4 text-white text-uppercase">Simple</h4>
-											<div class="separator bg-primary mt-3 mb-4"></div>
-										</div>
-										<div class="col-3">
-											<img src="./images/vidrio-simple.svg" class="img-fluid" alt="Vidrio Simple">
-										</div>
-									</div>
-									<p class="text-white font-weight-light">
-										Tradicionalmente denominado cristal plano. Es un cristal
-										plano transparente, libre de distorsión que tiene sus caras
-										planas y paralelas con sus superficies brillantes, pulidas a fuego.
-									</p>
-								</div>
-								<div class="col-sm-6 pl-0 pl-lg-5 pl-md-3 mb-5">
-									<div class="row">
-										<div class="col-9">
-											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
-											<h4 class="display-4 text-white text-uppercase">Laminado</h4>
-											<div class="separator bg-primary mt-3 mb-4"></div>
-										</div>
-										<div class="col-3">
-											<img src="./images/vidrio-laminado.svg" class="img-fluid" alt="Vidrio Simple">
-										</div>
-									</div>
-									<p class="text-white font-weight-light">
-										Compuesto por dos o más hojas de vidrio unidas entre sí por
-										una lámina de PVB (Polivinil Butiral), mediante un proceso de
-										calor y presión. Ante la rotura, los trozos de vidrio quedan adheridos
-										a la lámina de PVB, presentando gran resistencia al traspaso,
-										evitando que las personas se lastimen.
-									</p>
-								</div>
-								<div class="col-sm-6 pr-0 pr-lg-5 pr-md-3 mb-5 mb-sm-0">
-									<div class="row">
-										<div class="col-9">
-											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
-											<h4 class="display-4 text-white text-uppercase">DVH</h4>
-											<div class="separator bg-primary mt-3 mb-4"></div>
-										</div>
-										<div class="col-3">
-											<img src="./images/vidrio-dvh.svg" class="img-fluid" alt="Vidrio Simple">
-										</div>
-									</div>
-									<p class="text-white font-weight-light">
-										Mejoran la eficiencia energética de hogares y edificios mediante el
-										aumento de la aislación térmica, al tiempo que permiten un uso
-										extensivo del vidrio. Compuesto por dos vidrios simples, separados
-										entre sí por una cámara de aire seco y quieto que le da su capacidad
-										de aislante térmico, sellado al paso de la humedad y al vapor de agua.
-									</p>
-								</div>
-								<div class="col-sm-6 pl-0 pl-lg-5 pl-md-3">
-									<div class="row">
-										<div class="col-9">
-											<h4 class="h4 text-white text-uppercase mb-0">Vidrio</h4>
-											<h4 class="display-4 text-white text-uppercase">Blidex</h4>
-											<div class="separator bg-primary mt-3 mb-4"></div>
-										</div>
-										<div class="col-3">
-											<img src="./images/vidrio-blidex.svg" class="img-fluid" alt="Vidrio Simple">
-										</div>
-									</div>
-									<p class="text-white font-weight-light">
-										Es un vidrio con una resistencia al impacto 4 veces superior
-										a la de un vidrio crudo. Además, en caso de rotura lo hace
-										en pequeños fragmentos sin aristas filosas, evitando heridas
-										cortantes o lacerantes a las personas.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="container text-center mt-4 p-4 p-sm-0">
-						<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseOtros" role="button" aria-expanded="false" aria-controls="collapseOtros">
-							Otros
-						</a>
-					</div>
-
-					<div class="collapse bg-primary py-5 mt-4 w-100" id="collapseOtros">
-						<div class="container p-4 p-sm-0">
-							<div class="row">
-								<div class="col-sm-6 pr-5 mb-4 mb-sm-0">
-									<h4 class="display-4 text-white text-uppercase">Persianas</h4>
-									<div class="separator mt-3 mb-4"></div>
-									<p class="text-white">
-										Manuales o automatizadas, con ellas podremos atenuar, controlar y
-										regular de manera efectiva el aislamiento térmico, acústico y visual.
-										La protección solar o la radiación excesiva. La ventilación en verano,
-										la humedad. La seguridad de la vivienda. El exceso o falta de
-										iluminación natural. Efectos del granizo.
-									</p>
-								</div>
-								<div class="col-sm-6 pl-0 pl-sm-5">
-									<h4 class="display-4 text-white text-uppercase">Alucobond</h4>
-									<div class="separator mt-3 mb-4"></div>
-									<p class="text-white">
-										Material compuesto por dos láminas de aluminio externas y núcleo
-										polímero de baja densidad. Las placas deben acomplarse a una
-										subestructura principal cuya función es nivelar y contenér. Logra
-										durabilidad, resistencia a los Rayos UV, evita deformaciones y roturas.
-										Apto para mecanizar.
-									</p>
-								</div>
+							<div class="col-sm-6 pl-3 pl-sm-5">
+								<h4 class="display-4 text-white text-uppercase">Alucobond</h4>
+								<div class="separator mt-3 mb-4"></div>
+								<p class="text-white">
+									Material compuesto por dos láminas de aluminio externas y núcleo
+									polímero de baja densidad. Las placas deben acomplarse a una
+									subestructura principal cuya función es nivelar y contenér. Logra
+									durabilidad, resistencia a los Rayos UV, evita deformaciones y roturas.
+									Apto para mecanizar.
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="clients py-5 py-md-3">
-				<div class="container py-4 py-sm-0">
-					<div class="d-flex justify-content-center align-items-center flex-column flex-md-row flex-wrap">
-						<small class="text-uppercase font-weight-light pr-0 pr-md-4 mb-3 mb-md-0">Trabajamos con:</small>
-						<img src="./images/client-logo-1.svg" alt="Aluar">
-						<img src="./images/client-logo-2.svg" alt="Exa">
-						<img src="./images/client-logo-3.svg" alt="Vasa">
-						<img src="./images/client-logo-4.svg" alt="Favicur">
-					</div>
+		<section class="clients py-5 py-md-3">
+			<div class="container py-4 py-sm-0">
+				<div class="d-flex justify-content-center align-items-center flex-column flex-md-row flex-wrap">
+					<small class="text-uppercase font-weight-light pr-0 pr-md-4 mb-3 mb-md-0">Trabajamos con:</small>
+					<img src="./images/client-logo-1.svg" alt="Aluar">
+					<img src="./images/client-logo-2.svg" alt="Exa">
+					<img src="./images/client-logo-3.svg" alt="Vasa">
+					<img src="./images/client-logo-4.svg" alt="Favicur">
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="contact py-5" id="contacto">
-				<div class="container p-4 p-sm-0">
-					<div class="row">
-						<div class="col-sm-7 mb-4 mb-sm-0">
-							<h3 class="text-primary mt-3">
-								DEJÁNOS TU CONSULTA.<br>
-								ESTAMOS PARA ASESORARTE<br>
-								EN LO QUE NECESITES.
-							</h3>
-							<ul class="p-0 mt-4">
-								<li class="d-flex pb-2">
-									<img src="./images/marker-icon.svg" alt="Marker Icon" width="22" class="mr-2">
-									<p class="m-0">Baigorrí 279. Alta Córdoba. Córdoba. Argentina.</p>
-								</li>
-								<li class="d-flex pb-2">
-									<img src="./images/clock-icon.svg" alt="Clock Icon" width="22" class="mr-2">
-									<p class="m-0">Lunes a Viernes 08:00 a 12:30 hs. / 14:00 a 18.00 hs.</p>
-								</li>
-								<li class="d-flex pb-2">
-									<img src="./images/mail-icon.svg" alt="Mail Icon" width="22" class="mr-2">
-									<p class="m-0">estanka.aluminio@gmail.com</h6>
-								</li>
-								<li class="d-flex">
-									<img src="./images/phone-icon.svg" alt="Phone Icon" width="22" class="mr-2">
-									<p class="m-0">Tel.: 54 (0351) 4717181</p>
-								</li>
-							</ul>
-							<div class="d-flex mt-4">
-								<a href="https://wa.me/5493518143149" target="_blank" class="social-media-icon mr-3">
-									<img src="./images/whatsapp-filled-icon.svg" alt="WhatsApp Icon" width="24">
-								</a>
-								<a href="https://instagram.com/estankaluminio" target="_blank" class="social-media-icon mr-3">
-									<img src="./images/instagram-filled-icon.svg" alt="Instagram Icon" width="24">
-								</a>
-								<a href="https://www.facebook.com/estankaluminio" target="_blank" class="social-media-icon">
-									<img src="./images/facebook-filled-icon.svg" alt="Facebook Icon" width="24">
-								</a>
-							</div>
+		<section class="contact py-5" id="contacto">
+			<div class="container p-4 p-sm-0">
+				<div class="row">
+					<div class="col-sm-7 mb-4 mb-sm-0">
+						<h3 class="text-primary mt-3">
+							DEJÁNOS TU CONSULTA.<br>
+							ESTAMOS PARA ASESORARTE<br>
+							EN LO QUE NECESITES.
+						</h3>
+						<ul class="p-0 mt-4">
+							<li class="d-flex pb-2">
+								<img src="./images/marker-icon.svg" alt="Marker Icon" width="22" class="mr-2">
+								<p class="m-0">Baigorrí 279. Alta Córdoba. Córdoba. Argentina.</p>
+							</li>
+							<li class="d-flex pb-2">
+								<img src="./images/clock-icon.svg" alt="Clock Icon" width="22" class="mr-2">
+								<p class="m-0">Lunes a Viernes 08:00 a 12:30 hs. / 14:00 a 18.00 hs.</p>
+							</li>
+							<li class="d-flex pb-2">
+								<img src="./images/mail-icon.svg" alt="Mail Icon" width="22" class="mr-2">
+								<p class="m-0">estanka.aluminio@gmail.com</h6>
+							</li>
+							<li class="d-flex">
+								<img src="./images/phone-icon.svg" alt="Phone Icon" width="22" class="mr-2">
+								<p class="m-0">Tel.: 54 (0351) 4717181</p>
+							</li>
+						</ul>
+						<div class="d-flex mt-4">
+							<a href="https://wa.me/5493518143149" target="_blank" class="social-media-icon mr-3">
+								<img src="./images/whatsapp-filled-icon.svg" alt="WhatsApp Icon" width="24">
+							</a>
+							<a href="https://instagram.com/estankaluminio" target="_blank" class="social-media-icon mr-3">
+								<img src="./images/instagram-filled-icon.svg" alt="Instagram Icon" width="24">
+							</a>
+							<a href="https://www.facebook.com/estankaluminio" target="_blank" class="social-media-icon">
+								<img src="./images/facebook-filled-icon.svg" alt="Facebook Icon" width="24">
+							</a>
 						</div>
-						<div class="col-sm-5">
-							<form class="needs-validation" novalidate>
-								<div class="form-group">
+					</div>
+					<div class="col-sm-5">
+						<form class="needs-validation" action="./contact.php" method="POST" novalidate>
+							<div class="form-group">
+								<div class="field">
+									<input type="text" class="form-control" id="validationCustom01" name="firstName"
+										placeholder="Ingresa tu nombre" required>
+									<label for="validationCustom01">Nombre</label>
+									<div class="invalid-feedback">
+										¿Cuál es tu nombre?
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="field">
+									<input type="text" class="form-control" id="validationCustom02" name="lastName"
+										placeholder="Ingresa tu apellido" required>
+									<label for="validationCustom02">Apellido</label>
+									<div class="invalid-feedback">
+										Rellená tu apellido
+									</div>
+								</div>
+							</div>
+							<div class="form-group form-row">
+								<div class="col pr-sm-3">
 									<div class="field">
-										<input type="text" class="form-control" id="validationCustom01" placeholder="Ingresa tu nombre" required>
-										<label for="validationCustom01">Nombre</label>
+										<input type="email" class="form-control" id="validationCustom03" name="email"
+											placeholder="ingresa@tuemail.com" required>
+										<label for="validationCustom03">E-mail</label>
 										<div class="invalid-feedback">
-											¿Cuál es tu nombre?
+											Ingresa un email válido
 										</div>
 									</div>
 								</div>
-								<div class="form-group">
+								<div class="col pl-sm-3">
 									<div class="field">
-										<input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tu apellido" required>
-										<label for="validationCustom02">Apellido</label>
+										<input type="tel" class="form-control" id="validationCustom04" name="phone"
+											placeholder="+54 xxx xxx-xxx" required>
+										<label for="validationCustom04">Teléfono</label>
 										<div class="invalid-feedback">
-											Rellená tu apellido
+											Ingresa un teléfono fijo o movil
 										</div>
 									</div>
 								</div>
-								<div class="form-group form-row">
-									<div class="col pr-sm-3">
-										<div class="field">
-											<input type="email" class="form-control" id="validationCustom03" placeholder="ingresa@tuemail.com" required>
-											<label for="validationCustom03">E-mail</label>
-											<div class="invalid-feedback">
-												Ingresa un email válido
-											</div>
-										</div>
-									</div>
-									<div class="col pl-sm-3">
-										<div class="field">
-											<input type="tel" class="form-control" id="validationCustom04" placeholder="+54 xxx xxx-xxx" required>
-											<label for="validationCustom04">Teléfono</label>
-											<div class="invalid-feedback">
-												Ingresa un teléfono fijo o movil
-											</div>
-										</div>
+							</div>
+							<div class="form-group">
+								<div class="field">
+									<input type="text" class="form-control" id="validationCustom05" name="city"
+										placeholder="Córdoba, Argentina" required>
+									<label for="validationCustom05">Ciudad</label>
+									<div class="invalid-feedback">
+										No te olvides de ingresar la ciudad
 									</div>
 								</div>
-								<div class="form-group">
-									<div class="field">
-										<input type="text" class="form-control" id="validationCustom05" placeholder="Córdoba, Argentina" required>
-										<label for="validationCustom05">Ciudad</label>
-										<div class="invalid-feedback">
-											No te olvides de ingresar la ciudad
-										</div>
+							</div>
+							<div class="form-group">
+								<div class="field">
+									<textarea class="form-control" id="validationCustom06" name="message"
+										placeholder="Escribe la consulta..." required></textarea>
+									<label for="validationCustom06">Consulta</label>
+									<div class="invalid-feedback">
+										¿Cuál es tu consulta?
 									</div>
 								</div>
-								<div class="form-group">
-									<div class="field">
-										<textarea class="form-control" id="validationCustom06" placeholder="Escribe la consulta..." required></textarea>
-										<label for="validationCustom06">Consulta</label>
-										<div class="invalid-feedback">
-											¿Cuál es tu consulta?
-										</div>
-									</div>
-								</div>
-								<!-- <div class="form-group">
+							</div>
+							<!-- <div class="form-group">
 									<div class="form-check">
 										<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
 										<label class="form-check-label" for="invalidCheck">
@@ -783,39 +813,16 @@
 										</div>
 									</div>
 								</div> -->
-								<button class="btn btn-primary px-5 mt-3 rounded-pill" type="submit">Enviar</button>
-								<!-- <div class="alert alert-success" role="alert">
+							<button class="btn btn-primary px-5 mt-3 rounded-pill" type="submit">Enviar</button>
+							<!-- <div class="alert alert-success" role="alert">
 									¡Recibimos tu mensaje! Te contactaremos en los próximos días.
 								</div> -->
-							</form>
-							
-							<script>
-							// Example starter JavaScript for disabling form submissions if there are invalid fields
-							(function() {
-								'use strict';
-								window.addEventListener('load', function() {
-									// Fetch all the forms we want to apply custom Bootstrap validation styles to
-									var forms = document.getElementsByClassName('needs-validation');
-									// Loop over them and prevent submission
-									var validation = Array.prototype.filter.call(forms, function(form) {
-										form.addEventListener('submit', function(event) {
-											if (form.checkValidity() === false) {
-												event.preventDefault();
-												event.stopPropagation();
-											}
-											form.classList.add('was-validated');
-											if (form.checkValidity() === true) {
-												// TODO send mail, hide form and show success alert 
-											}
-										}, false);
-									});
-								}, false);
-							})();
-							</script>
-						</div>
+						</form>
 					</div>
 				</div>
-			</section>
-		</main>
-  </body>
+			</div>
+		</section>
+	</main>
+</body>
+
 </html>
