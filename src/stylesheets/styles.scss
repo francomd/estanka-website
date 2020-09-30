@@ -356,6 +356,9 @@
   }
 
   form {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+
     .field {
       display: flex;
       flex-direction: column;
@@ -454,6 +457,10 @@
     &.was-validated .form-control:valid,
     .form-control.is-valid {
       border-color: map-get($theme-colors, "primary");
+    }
+
+    &.loading {
+      opacity: 0.5;
     }
   }
 }

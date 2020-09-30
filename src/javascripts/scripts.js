@@ -102,11 +102,11 @@ $(() => {
           form.addEventListener(
             'submit',
             (event) => {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
+              event.preventDefault();
+              event.stopPropagation();
+
               form.classList.add('was-validated');
+
               if (form.checkValidity() === true) {
                 // eslint-disable-next-line no-debugger
                 debugger;
@@ -129,12 +129,21 @@ $(() => {
                   message: formValues.message,
                 });
 
-                posting.done(() => {
-                  /* Change the button text. */
-                  submit.innerHTML = 'Datos enviados';
+                form.classList.add('loading');
+                submit.setAttribute('disabled', '');
 
-                  /* Disable the button. */
-                  submit.setAttribute('disabled', '');
+                posting.done(() => {
+                  setTimeout(() => {
+                    submit.innerHTML = 'Datos enviados';
+                    form.reset();
+                    form.classList.remove('loading');
+                    form.classList.remove('was-validated');
+
+                    setTimeout(() => {
+                      submit.innerHTML = 'Enviar';
+                      submit.removeAttribute('disabled');
+                    }, 3000);
+                  }, 1500);
                 });
               }
             },
