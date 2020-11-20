@@ -13,8 +13,8 @@ require 'vendor/PHPMailer/SMTP.php';
 
 $mail = new PHPMailer;
 
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
+$firstName = $_POST['first_name'];
+$lastName = $_POST['last_name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $city = $_POST['city'];
@@ -32,7 +32,6 @@ if (isset($firstName, $email)) {
         margin: 0 auto;
     ">
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACl0lEQVR4Ae3Bz2sTaRzA4c98O5k22rdujbqw0EpbsZnA1l+I6IIdLz0KgkeFPezJg4ftYUX/BBfB6x67ue7J67JMwEiDAQVpDG7ioblUcUp1Op0wqVMNeChFNImN9IV5HhKJRCKR2DWGDKCyFxErzXdispsM02L6zn/EmxFBvYRfcfGrBYLaInHUpA9M+kGsNMp2ULZDWxyFBPUSfsXFrxYIaiXiKGQXmHTJEJGtOI7phlhplO2gbIe2OAoJ6iX8iotfLRDUSsRRSA9MupT79Y/7IxPZ06uVsustld21F08fbTbDgG6IlUbZDsp2aIujkKBewq+4+NUCQW2ROGrSAZMuSSo1ODp98sLo9MkLU1d+ux1vtqIn9+avvioXHtArsdIo20HZDm1brSbrtUX8iotfLRDUSsRRyGeYfCMxU5aZHh7hi7a2wDDolJEaQtkOynZoi6OQoF6isXCTjeVnbGOyw8j48Zns9d/vepXH7upS2X37slKON1stevV+Y42lWzOo7Cwq56Bsh8Efp+iGWGmU7WBljrKx/IxtTHaQVMo6dOL83KET5+f46H1zY33533/+er7w5zy9irwGXjGPV8zTZmXGUNlZVM5B2bMMHpkCw6AHJl8xMLRvWI0f+5ndFHkNvGIer5inzcqMobKzqJyDsh0Gj0yCYdABk70g8hp4xTxeMU+blRlj8kae4exFvkLYiyKvQWtthQ4ImhM0J2hO0JygOUFzguYEzQmaEzQnaE7QnKA5QXMm/SbWPiZv/E239h87RwdM+s0wLQ7+co0+ETQnaE7QnMEOqeGR0Uzu7CW2id6tvl6tPnnIRwcm7FPpwz9NsM3bl0uPwzcrDQwZ4IczlwGDflj//xGttRUSiUQikfjkA9sn4v+bDEIpAAAAAElFTkSuQmCC" style="
-        float: left;
         padding-right: 1rem;
     ">
 
@@ -71,9 +70,9 @@ if (isset($firstName, $email)) {
     $mail->Username = "website@estanka.com.ar";
     $mail->Password = "@yyhMfV5nG";
 
-    $mail->addReplyTo('no-reply@estanka.com.ar', 'NO RESPONDER');
+    $mail->addReplyTo($email, $firstName.' '.$lastName);
     $mail->setFrom('website@estanka.com.ar', 'Sitio Web');
-    $mail->addAddress('info@estanka.com.ar', 'Info');
+    $mail->addAddress('consultas@estanka.com.ar', 'Consultas');
     $mail->Subject = 'Consulta de '.$firstName;
     $mail->MsgHTML($body);
 

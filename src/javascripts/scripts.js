@@ -75,7 +75,6 @@ $(() => {
 
     const elemTop = $(elem).offset().top;
     // const elemBottom = elemTop + $(elem).height();
-    // debugger;
     return elemTop <= docViewBottom - 150;
   }
   // If element is scrolled into view, fade it in
@@ -108,8 +107,6 @@ $(() => {
               form.classList.add('was-validated');
 
               if (form.checkValidity() === true) {
-                // eslint-disable-next-line no-debugger
-                debugger;
                 const formValues = {};
                 Array.from(form.elements).forEach(
                   // eslint-disable-next-line no-return-assign
@@ -133,6 +130,9 @@ $(() => {
                 submit.setAttribute('disabled', '');
 
                 posting.done(() => {
+                  // eslint-disable-next-line no-undef
+                  gtag_report_conversion('https://estanka.com.ar/#contacto');
+
                   setTimeout(() => {
                     submit.innerHTML = 'Datos enviados';
                     form.reset();
